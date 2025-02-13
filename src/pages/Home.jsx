@@ -1,6 +1,6 @@
-import AboutSection from './components/AboutSection'
-import IntroSection from './components/IntroSection'
-import LogoDivider from './components/LogoDivider'
+import AboutSection from '../components/AboutSection'
+import IntroSection from '../components/IntroSection'
+import LogoDivider from '../components/LogoDivider'
 
 function Home() {
 
