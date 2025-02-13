@@ -9,7 +9,7 @@ function NavBar() {
             </div>
     
             <div className="flex space-x-8 text-white">
-            <Link  to="/" className="hover:text-robin-blue duration-300 transform hover:scale-110"> Home</Link>
+            <Link  to="/website" className="hover:text-robin-blue duration-300 transform hover:scale-110"> Home</Link>
             <a href="#about" className="hover:text-robin-blue duration-300 transform hover:scale-110">
                 About
             </a>
