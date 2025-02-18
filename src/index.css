@@ -6,6 +6,10 @@
   --color-bittersweet-red: #EE6353;
   --color-screaming-green: #99FF65;
   --color-silver-grey: #BBBEBF;
+  --breakpoint-xl: 100rem;
+  --breakpoint-2xl: 125rem;
+  --breakpoint-3xl: 150rem;
+  --breakpoint-4xl: 250rem;
 }
 
 html { scroll-behavior: smooth; }

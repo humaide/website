@@ -3,11 +3,11 @@ function IntroSection() {
     return (
       <>
         <section id="intro" className="h-screen bg-midnight-blue flex flex-col text-white items-center justify-center">
-            <div className="h-[25%] text-center">
-                <h1 className="text-7xl font-medium">Welcome to</h1>
-                <h2 className="text-8xl font-bold uppercase">Hum<span className="text-robin-blue">ai</span>de!</h2>
-                <h3 className="text-3xl text-center italic pt-6">Human Minds in Automation</h3>
-                <h3 className="text-3xl text-center italic font-light">Integration Design for Empowerment</h3>                
+            <div className="h-[25%] text-center lg:-mt-16 xl:-mt-28 2xl:-mt-44">
+                <h1 className="text-4xl lg:text-7xl 3xl:text-[9rem] 4xl:text-[14rem] font-medium">Welcome to</h1>
+                <h2 className="text-5xl lg:text-8xl 3xl:text-[12rem] 4xl:text-[18rem] font-bold uppercase pt-2">Hum<span className="text-robin-blue">ai</span>de!</h2>
+                <h3 className="text-xl lg:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-8xl text-center italic pt-2 lg:pt-6">Human Minds in Automation</h3>
+                <h3 className="text-xl lg:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-8xl text-center italic font-light px-4">Integration Design for Empowerment</h3>                
             </div>
             <div className="h-[35%] text-center"></div>
         </section>

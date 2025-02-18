@@ -4,7 +4,7 @@ function Footer() {
       <footer className="flex flex-col text-white items-center justify-center w-full">
 
         <div className="w-full px-4 border-b-[0.25px] border-robin-blue self-center rounded-xs"></div>
-        <div className="w-full flex items-center justify-between bg-midnight-blue px-8">
+        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between bg-midnight-blue px-8">
             
             <div className="flex">
               <img src="copyright-regular.svg" alt="copyright icon" className="w-4"/>

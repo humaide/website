@@ -1,0 +1,14 @@
+/* eslint-disable react/prop-types */
+function Header({ subtitle, title, description, position, color }) {
+    return (
+      <>
+      <div className={`flex flex-col items-center justify-center w-full md:w-[55%] max-md:px-4 max-lg:px-0 lg:px-28 py-2 max-lg:text-center mb-12 ${color == "green" ? "bg-midnight-blue" : "bg-gray-100 lg:bg-transparent"} ${position == "right" ? "lg:text-right lg:items-end " : position == "left" ? "lg:items-start lg:text-left" : "lg:items-center lg:text-center"}`}>
+        <h1 className="uppercase font-light xl:text-2xl 2xl:text-4xl">{subtitle}</h1>
+        <h2 className="uppercase font-bold text-2xl lg:text-4xl 2xl:text-6xl">{title}</h2>
+        <p className="text-lg lg:text-xl 2xl:text-4xl">{description}</p>        
+      </div>
+      </>
+    );
+  };
+  
+  export default Header;
