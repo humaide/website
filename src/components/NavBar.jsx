@@ -40,7 +40,7 @@ function NavBar() {
                     <a href="#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">Resources</a>                    
                 </div>
                 <div className="mx-4 my-1 2xl:mx-6 2xl:my-3 4xl:mx-8 4xl:my-5 py-2">
-                    <a href="mailto:hello@humaide.com?subject=Kontaktanfrage?body=Hallo%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20bin%20auf%20eure%20Website%20gestoßen%20und%20würde%20mich%20sehr%20über%20eine%20Nachricht%20von%20euch%20freuen!%20" className="hover:text-robin-blue duration-300 transform hover:scale-110">
+                    <a href="mailto:hello@humaide.com?subject=Kontaktanfrage&body=Hallo%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20bin%20auf%20eure%20Website%20gestoßen%20und%20würde%20mich%20sehr%20über%20eine%20Nachricht%20von%20euch%20freuen!%20" className="hover:text-robin-blue duration-300 transform hover:scale-110">
                         <button className="bg-robin-blue text-midnight-blue font-semibold px-4 py-1 2xl:px-6 2xl:py-3 4xl:px-8 4xl:py-5 rounded-md hover:bg-midnight-blue hover:text-robin-blue duration-300 border-2 border-robin-blue">
                             Contact us
                         </button>
