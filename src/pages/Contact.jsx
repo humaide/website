@@ -8,7 +8,7 @@ function Contact() {
 
     return (
       <>
-        <div className="flex flex-col justify-center bg-midnight-blue h-fit text-white px-4 lg:px-32 py-8">
+        <div className="flex flex-col justify-center bg-midnight-blue h-fit text-white px-4 lg:px-32 py-8 font-din">
             <div className="w-full flex items-center justify-between">
 
               <h1 className="font-semibold text-5xl py-8 uppercase"></h1>     

@@ -1,15 +1,24 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'DIN 1451 Mittelschrift';
+  font-style: normal;
+  font-weight: 200 400;
+  font-display: swap;
+  src: url("/fonts/alte-din-1451-mittelschrift.regular.ttf") format("ttf")
+}
+
 @theme {
   --color-midnight-blue: #004A5F;
   --color-robin-blue: #0FD2D2;
   --color-bittersweet-red: #EE6353;
   --color-screaming-green: #99FF65;
   --color-silver-grey: #BBBEBF;
-  --breakpoint-xl: 100rem;
+  --breakpoint-xl: 1220px;
   --breakpoint-2xl: 125rem;
   --breakpoint-3xl: 150rem;
   --breakpoint-4xl: 250rem;
+  --font-din: "DIN 1451 Mittelschrift", sans-serif; 
 }
 
 html { scroll-behavior: smooth; }
