@@ -2,9 +2,11 @@ import BartlettGame from "../components/interactive/BartlettGame"
 import WaveBottom from "../assets/wave.svg"
 import EMI from "../assets/Welcome_EMI.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
+import { motion } from "motion/react"
 
 function GoSpecials() {
+  const [progress, setProgress] = useState(0);  
   const gamesection = useRef(0);
   const scrollToGame = () => {
     if (gamesection.current) {
@@ -12,11 +14,39 @@ function GoSpecials() {
     }
   };
 
+
+  useEffect(() => {
+    if (progress < 100) {
+      const timer = setInterval(() => {
+        setProgress((prev) => prev + 1);
+      }, 20); 
+      return () => clearInterval(timer);
+    }
+  }, [progress]);
+
+
   return (
     <div className='font-din text-white bg-[url(/meetup_highres_bg.png)] bg-cover hyphens-auto' lang="de">
+        
+        {/* <motion.div className="fixed top-0 left-0 w-full h-screen bg-[url(/meetup_highres_bg.png)] flex flex-col justify-center items-center z-10"
+            initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 0}} transition={{ duration: 1, delay: 4 }}>
+          <div className="text-4xl text-center font-bold pb-20 px-8">
+            {text.map((el, i) => (
+              <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.25, delay: i / 3, }} key={i}>
+                {el}{" "}
+              </motion.span>
+            ))}
+          </div>
+          <div className="w-64 h-2 bg-gray-300 rounded-full">
+            <motion.div className="h-full bg-robin-blue rounded-full"
+              style={{ width: `${progress}%` }} initial={{ width: 0 }} animate={{ width: `${progress}%` }} transition={{ duration: 0.1 }}
+            />
+          </div>
+        </motion.div> */}
+
         {/* Intro section */}
         <section className="h-fill w-full">
-          <div className="flex flex-col md:flex-row items-center justify-center md:h-96">
+          <motion.div className="flex flex-col md:flex-row items-center justify-center md:h-96" initial={{ opacity: 0, scale: 1 }} animate={{ opacity: 1}} transition={{ duration: 2, delay: 0.5 }}>
             <div className="flex flex-col items-end md:w-3/4 lg:w-1/2 text-center md:text-right pt-16 2xl:pt-28 px-8 md:px-0">
                <h1 className="text-lg lg:text-xl 2xl:text-3xl pb-4 mx-auto md:mx-0 font-sans font-light">HUMAIDE gratuliert zu</h1>
                <h1 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-semibold uppercase mx-auto md:mx-0 md:pl-4">10 Jahre<br/>Meet-Up der Medieninformatik!</h1>
@@ -29,9 +59,9 @@ function GoSpecials() {
                </button>       
             </div>
             <div className="w-full self-start lg:self-center flex item-center justify-center lg:justify-start md:w-1/2">
-              <img src={EMI} className="shrink lg:mx-10 w-3/4 min-[425px]:w-1/2 md:w-fit py-8 md:py-0 px-10 md:px-0 md:h-1/2 lg:h-5/6 md:top-28 lg:bottom-0 md:absolute" />              
+              <img src={EMI} className="hrink lg:mx-10 w-3/4 min-[425px]:w-1/2 md:w-fit py-8 md:py-0 px-10 md:px-0 md:h-1/2 lg:h-5/6 md:top-28 lg:bottom-0 md:absolute" />              
             </div>
-          </div>
+          </motion.div>
           <img src={WaveBottom} className="h-1/5 object-fill bottom-0" />
         </section>
 
