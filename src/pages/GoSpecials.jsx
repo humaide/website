@@ -1,6 +1,7 @@
 import BartlettGame from "../components/interactive/BartlettGame"
 import WaveBottom from "../assets/wave.svg"
 import EMI from "../assets/Welcome_EMI.png"
+import MeetUpBg from "../assets/meetup_bg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRef, useEffect, useState } from "react";
 import { motion } from "motion/react"
@@ -26,9 +27,10 @@ function GoSpecials() {
 
 
   return (
-    <div className='font-din text-white bg-[url(/meetup_highres_bg.png)] bg-cover hyphens-auto' lang="de">
+    <div className='font-din text-white  bg-cover hyphens-auto' lang="de" style={{backgroundImage: `url(${MeetUpBg})`}}>
         
-        {/* <motion.div className="fixed top-0 left-0 w-full h-screen bg-[url(/meetup_highres_bg.png)] flex flex-col justify-center items-center z-10"
+        {/*bg-[url(/meetup_highres_bg.png)] 
+        <motion.div className="fixed top-0 left-0 w-full h-screen bg-[url(/meetup_highres_bg.png)] flex flex-col justify-center items-center z-10"
             initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 0}} transition={{ duration: 1, delay: 4 }}>
           <div className="text-4xl text-center font-bold pb-20 px-8">
             {text.map((el, i) => (
@@ -100,7 +102,7 @@ function GoSpecials() {
         </section>
 
         {/* Lower bound */}
-        <section id="mail" className="h-full bg-[url(/meetup_highres_bg.png)] bg-cover">
+        <section id="mail" className="h-full bg-cover" style={{backgroundImage: `url(${MeetUpBg})`}}>
         <img src={WaveBottom} className="h-1/5 object-fill rotate-180 bottom-0" />
         <div className="flex items-center justify-center h-full w-full pt-10">
           <div className="bg-white xl:w-3/5 flex flex-col items-center justify-center text-midnight-blue mx-2 min-[425px]:mx-6 lg:mx-20 2xl:mx-96 py-4 mb-40 xl:mx-48 p-2 md:p-8 rounded-lg shadow-2xl shadow-gray-800">
