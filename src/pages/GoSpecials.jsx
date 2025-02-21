@@ -1,7 +1,7 @@
 import BartlettGame from "../components/interactive/BartlettGame"
 import WaveBottom from "../assets/wave.svg"
 import EMI from "../assets/Welcome_EMI.png"
-import MeetUpBg from "../assets/meetup_bg.png"
+import MeetUpBg from "../assets/meetup_bg.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRef, useEffect, useState } from "react";
 import { motion } from "motion/react"
