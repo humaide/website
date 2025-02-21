@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/",
   build: {
     rollupOptions: {
-      fallback: '/404.html'
+      fallback: './404.html'
       }
   }
 })
