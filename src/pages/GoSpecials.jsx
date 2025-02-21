@@ -81,9 +81,8 @@ function GoSpecials() {
               die hier vorgestellten Projekte überhaupt möglich gemacht werden.
             </p>
             <p className="pt-2 2xl:pt-4">
-            Wie wichtig gute Zusammearbeit ist, zeigt auch die KI-Forschung: KI schneidet in Aufgaben allein zwar teilweise besser ab als wir oder mit uns, aber gemeinsam 
-            mit KI sind wir besser als ohne! Für EMI heißt das: <em>Mensch und KI können gemeinsam mehr erreichen 
-            als alleine – wenn sie integriert arbeiten.</em> Lasst uns das testen mit einem Spiel:
+            Wie wichtig gute Zusammearbeit ist, zeigt auch die KI-Forschung: Allein schneidet KI in Aufgaben zwar teilweise besser ab als wir oder mit uns, aber gemeinsam 
+            mit KI sind wir besser als ohne! <em>Mensch und KI können gemeinsam mehr erreichen als alleine – wenn sie integriert arbeiten.</em> EMI möchte das mit einem Spiel testen:
             </p>
             <h1 className="pt-2 2xl:py-4 text-base md:text-lg lg:text-xl 2xl:text-4xl text-wrap font-semibold uppercase bg-gradient-to-r from-robin-blue to-green-600 inline-block text-transparent bg-clip-text">Welchen Score erreichst du?</h1>
             <ul className="list-disc px-4">
