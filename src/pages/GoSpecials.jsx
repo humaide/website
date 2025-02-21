@@ -17,7 +17,7 @@ function GoSpecials() {
                Wir freuen uns, gemeinsam mit euch feiern zu können! Anlässlich des Jubiläums haben wir mit EMI zusammen ein kleines Spiel 
                vorbereitet. Seid ihr bereit für eine Challenge?
                </p>
-               <a href="#bartlettgame" className="self-center md:self-end">
+               <a href="/#bartlettgame" className="self-center md:self-end">
                 <button className="border-2 border-white shadow-2xl hover:bg-robin-blue animate-bounce duration-300 shadow-black rounded-full">
                     <FontAwesomeIcon icon="angles-down" size="xl" className="text-white py-2 px-3 "/>
                 </button>       
