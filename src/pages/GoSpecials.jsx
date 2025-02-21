@@ -68,7 +68,7 @@ function GoSpecials() {
         </section>
 
         {/* Game section */}
-        <section ref={gamesection} className="flex flex-col-reverse md:flex-row md:h-screen bg-white py-12 sm:py-0">
+        <section ref={gamesection} className="flex flex-col-reverse md:flex-row md:h-screen bg-white dark:bg-white py-12 sm:py-0">
         
           <div className="md:w-1/2 pt-4 sm:pt-6">
             <BartlettGame />             
@@ -104,7 +104,7 @@ function GoSpecials() {
         <section id="mail" className="h-full bg-cover" style={{backgroundImage: `url(${MeetUpBg})`}}>
         <img src={WaveBottom} className="h-1/5 object-fill rotate-180 bottom-0" />
         <div className="flex items-center justify-center h-full w-full pt-10">
-          <div className="bg-white xl:w-3/5 flex flex-col items-center justify-center text-midnight-blue mx-2 min-[425px]:mx-6 lg:mx-20 2xl:mx-96 py-4 mb-40 xl:mx-48 p-2 md:p-8 rounded-lg shadow-2xl shadow-gray-800">
+          <div className="bg-white dark:bg-white xl:w-3/5 flex flex-col items-center justify-center text-midnight-blue mx-2 min-[425px]:mx-6 lg:mx-20 2xl:mx-96 py-4 mb-40 xl:mx-48 p-2 md:p-8 rounded-lg shadow-2xl shadow-gray-800">
             <h2 className="w-full mx-auto text-center px-4 md:px-8 py-2 text-base md:text-lg lg:text-xl 2xl:text-3xl text-wrap font-semibold uppercase">Mensch-KI-Integration<br/>für mehr Vertrauen, Effizienz & erfolgreiche Innovation</h2>
             <p className="w-full mx-auto text-center px-2 md:px-8 text-sm lg:text-lg 2xl:text-3xl">Genau das ist die Vision unseres StartUps! Hast du auch Lust deine Ideen und Visonen in die Tat umzusetzen? 
                 Dann sprich uns einfach an oder schick uns eine Nachricht! Egal ob du mit uns übers Gründen oder HUMAIDE selbst 
