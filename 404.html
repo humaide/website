@@ -1,19 +1,7 @@
-<!doctype html>
-<html lang="en">
 <script type="text/javascript">
-    // Leitet alle fehlgeschlagenen Seiten auf index.html um, damit React die Route verarbeiten kann
-    var redirectTo = window.location.pathname;
-    window.location.replace("/" + redirectTo);
-</script>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logos/humaide-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HUMAIDE</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
-</html>
+  if (!window.location.hash) {
+    const path = window.location.pathname;
+    window.location.replace(`${window.location.origin}/#${path}`);
+  }
+</script> 
   
