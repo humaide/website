@@ -2,8 +2,15 @@ import BartlettGame from "../components/interactive/BartlettGame"
 import WaveBottom from "../assets/wave.svg"
 import EMI from "../assets/Welcome_EMI.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useRef } from "react";
 
 function GoSpecials() {
+  const gamesection = useRef(0);
+  const scrollToGame = () => {
+    if (gamesection.current) {
+      gamesection.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='font-din text-white bg-[url(/meetup_highres_bg.png)] bg-cover hyphens-auto' lang="de">
@@ -17,11 +24,9 @@ function GoSpecials() {
                Wir freuen uns, gemeinsam mit euch feiern zu können! Anlässlich des Jubiläums haben wir mit EMI zusammen ein kleines Spiel 
                vorbereitet. Seid ihr bereit für eine Challenge?
                </p>
-               <a href="#/go#bartlettgame" className="self-center md:self-end">
-                <button className="border-2 border-white shadow-2xl hover:bg-robin-blue animate-bounce duration-300 shadow-black rounded-full">
-                    <FontAwesomeIcon icon="angles-down" size="xl" className="text-white py-2 px-3 "/>
-                </button>       
-               </a>
+               <button onClick={scrollToGame} className="self-center md:self-end border-2 border-white shadow-2xl hover:bg-robin-blue animate-bounce duration-300 shadow-black rounded-full">
+                  <FontAwesomeIcon icon="angles-down" size="xl" className="text-white py-2 px-3 "/>
+               </button>       
             </div>
             <div className="w-full self-start lg:self-center flex item-center justify-center lg:justify-start md:w-1/2">
               <img src={EMI} className="shrink lg:mx-10 w-3/4 min-[425px]:w-1/2 md:w-fit py-8 md:py-0 px-10 md:px-0 md:h-1/2 lg:h-5/6 md:top-28 lg:bottom-0 md:absolute" />              
@@ -31,7 +36,7 @@ function GoSpecials() {
         </section>
 
         {/* Game section */}
-        <section id="bartlettgame" className="flex flex-col-reverse md:flex-row md:h-screen bg-white py-12 sm:py-0">
+        <section ref={gamesection} className="flex flex-col-reverse md:flex-row md:h-screen bg-white py-12 sm:py-0">
         
           <div className="md:w-1/2 pt-4 sm:pt-6">
             <BartlettGame />             

@@ -1,6 +1,7 @@
 import { Link  } from "react-router-dom";
 import { useState } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { HashLink } from 'react-router-hash-link';
 
 function NavBar() {
 
@@ -34,17 +35,17 @@ function NavBar() {
                 {/* menu items */}
                 <div className="flex flex-col lg:flex-row lg:justify-between text-white items-center w-full lg:w-fit">
                     <Link onClick={() => setIsOpen(!isOpen)} to="/" className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center"> Home</Link>
-                    <a href="#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">About</a>
-                    <a href="#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">Solutions</a>
-                    <a href="#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center" >Team</a>
-                    <a href="#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">Resources</a>                    
+                    <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">About</HashLink>
+                    <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">Solutions</HashLink>
+                    <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center" >Team</HashLink>
+                    <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-robin-blue duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center">Resources</HashLink>                    
                 </div>
                 <div className="mx-4 my-1 2xl:mx-6 2xl:my-3 4xl:mx-8 4xl:my-5 py-2">
-                    <a href="#contact" className="hover:text-robin-blue duration-300 transform hover:scale-110">
+                    <HashLink to="/#contact" className="hover:text-robin-blue duration-300 transform hover:scale-110">
                         <button className="bg-robin-blue text-midnight-blue font-semibold px-4 py-1 2xl:px-6 2xl:py-3 4xl:px-8 4xl:py-5 rounded-md hover:bg-midnight-blue hover:text-robin-blue duration-300 border-2 border-robin-blue">
                             Contact us
                         </button>
-                    </a>
+                    </HashLink>
                 </div>
             </div> 
         </div>
