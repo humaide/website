@@ -81,7 +81,7 @@ function GoSpecials() {
               die hier vorgestellten Projekte überhaupt möglich gemacht werden.
             </p>
             <p className="pt-2 2xl:pt-4">
-            Auch die Forschung zeigt: KI schneidet in Aufgaben allein zwar teilweise besser ab als wir oder mit uns, aber gemeinsam 
+            Wie wichtig gute Zusammearbeit ist, zeigt auch die KI-Forschung: KI schneidet in Aufgaben allein zwar teilweise besser ab als wir oder mit uns, aber gemeinsam 
             mit KI sind wir besser als ohne! Für EMI heißt das: <em>Mensch und KI können gemeinsam mehr erreichen 
             als alleine – wenn sie integriert arbeiten.</em> Lasst uns das testen mit einem Spiel:
             </p>
