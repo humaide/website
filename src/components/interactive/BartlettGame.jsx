@@ -180,24 +180,40 @@ function BartlettGame() {
               {/* Overlay game end */}
               {showOverlay && (
               <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute">
-                  <div className="flex w-72 flex-col p-2 items-center justify-center bg-robin-blue rounded-lg mx-2">
-                    <p className="font-semibold text-2xl p-2">Auswertung</p>
-                    <div className="flex justify-evenly w-full py-1">
+                  <div className="flex w-72 flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 shadow-2xl shadow-gray-800">
+                    <p className="font-semibold text-xl p-2">Auswertung</p>
+                    <div className="flex justify-evenly w-full py-2">
+                      <p className="font-semibold text-lg">DU:</p>
                       <div className="flex items-center justify-center">
-                        <FontAwesomeIcon icon="star" size="sm" className="text-midnight-blue pr-2"/>
-                        <p className="font-semibold text-xl">{score}</p>                      
+                        <FontAwesomeIcon icon="star" size="sm" className="text-yellow-500 pr-1"/>
+                        <p className="font-semibold text-lg">{score}</p>                      
                       </div>
                       <div className="flex items-center justify-center">
-                        <FontAwesomeIcon icon="check" size="sm" className="text-midnight-blue pr-2"/>
-                        <p className="font-semibold text-xl">{((score / (round)) * 100).toFixed(0)}%</p>                         
+                        <FontAwesomeIcon icon="check" size="sm" className="text-green-500 pr-1"/>
+                        <p className="font-semibold text-lg">{((score / (round)) * 100).toFixed(0)}%</p>                         
                       </div>  
                       <div className="flex items-center justify-center">
-                        <FontAwesomeIcon icon="hourglass" size="sm" className="text-midnight-blue pr-2"/>
-                        <p className="font-semibold text-xl">{averageTime}s*</p>                         
+                        <FontAwesomeIcon icon="hourglass" size="sm" className="text-bittersweet-red pr-1"/>
+                        <p className="font-semibold text-lg">{averageTime}s*</p>                         
                       </div>                      
                     </div>
-                    <p className="text-center text-base px-4 font-semibold">Wie fandest du das Spiel?</p> 
-                    <p className="text-center text-base px-4">Wir sind neugierig: Hat der Hinweis in Runde 15 deine Entscheidungsstrategie beeinflusst?</p> 
+                    <div className="flex justify-evenly w-full pb-2">
+                      <p className="font-semibold text-lg">KI:</p>
+                      <div className="flex items-center justify-center">
+                        <FontAwesomeIcon icon="star" size="sm" className="text-yellow-500 pr-2"/>
+                        <p className="font-semibold text-lg">{correctHints}</p>                      
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <FontAwesomeIcon icon="check" size="sm" className="text-teal-500 pr-2"/>
+                        <p className="font-semibold text-lg">{((correctHints / (round)) * 100).toFixed(0)}%</p>                         
+                      </div>  
+                      <div className="flex items-center justify-center">
+{/*                         <FontAwesomeIcon icon="hourglass" size="sm" className="text-midnight-blue pr-2"/>
+                        <p className="font-semibold text-xl">{averageTime}s*</p>    */}                      
+                      </div>                      
+                    </div>
+                    <p className="text-center text-base px-4 font-semibold">Wir sind neugierig:</p> 
+                    <p className="text-center text-base px-4">Hat der Hinweis in Runde 15 deine Entscheidungsstrategie beeinflusst?</p> 
 {/*                     <div className="flex items-center justify-center w-full mt-2">
                       <input type="text" id="email" name="email" placeholder="example@email.com" className="w-5/6 px-4 py-2 bg-white border-2 border-midnight-blue rounded-lg text-base shadow-lg shadow-gray-600/60"></input>          
                       <button onClick={generateDetails} className="w-1/6 px-2 bg-midnight-blue border-2 border-midnight-blue hover:bg-robin-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
@@ -205,7 +221,7 @@ function BartlettGame() {
                       </button>
                     </div> */}
                     <a href="mailto:hello@humaide.com?subject=Meet-Up%20Game&body=Hey%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20habe%20auf%20dem%20Meet-Up%20an%20eurem%20Spiel%20teilgenommen.%20Der%20Hinweis%20zur%20Reliabilität%20hatte%20einen/keinen%20Einfluss%20auf%20meine%20Strategie:%20(Erzähl%20uns%20gerne%20mehr%20von%20deiner%20Strategie,%20wenn%20du%20magst!)">
-                      <button className="my-1 px-3 py-2 rounded-md border-2 bg-midnight-blue text-white border-robin-blue hover:border-midnight-blue hover:bg-robin-blue/20 hover:text-midnight-blue duration-300 shadow-md font-semibold text-base xl:text-xl 2xl:text-3xl 2xl:px-8 2xl:py-4">
+                      <button className="w-full my-1 px-3 py-2 rounded-md border-2 bg-robin-blue text-midnight-blue border-robin-blue hover:bg-robin-blue/20 hover:border-midnight-blue duration-300 shadow-md font-semibold text-base xl:text-lg 2xl:text-3xl 2xl:px-8 2xl:py-4">
                         <FontAwesomeIcon icon="envelope" size="sm" className="pr-2"/>
                         Erzähl uns davon!
                       </button>   
@@ -250,7 +266,7 @@ function BartlettGame() {
           </div>
           {/* AI Hint Section */}
           <div className="flex w-full bg-gradient-to-r from-robin-blue to-screaming-green rounded-b-md p-2">
-            <img src="logos/humaide-logo-default.svg" className="w-12 h-12 mr-2" />
+            <FontAwesomeIcon icon="robot" size="xl" className="bg-midnight-blue border-2 border-white rounded-full self-center py-3 px-2 mr-2"/>            
             <div className="px-4 py-2 bg-white text-midnight-blue rounded-tl-none rounded-lg shadow-md w-full text-left">
                 <h3 className="text-sm 2xl:text-2xl font-semibold">KI HINWEIS</h3>
                 <p className="text-md 2xl:text-2xl font-medium">{aiHint}</p>
