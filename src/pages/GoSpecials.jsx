@@ -76,21 +76,23 @@ function GoSpecials() {
           <div className="h-full lg:h-screen md:w-3/5 lg:w-2/3 flex flex-col items-start justify-center sm:justify-start md:justify-center px-4 min-[360px]:px-8 md:px-4 lg:px-0 md:pr-4 lg:pr-10 xl:mr-16 pt-4 md:pt-10 text-midnight-blue text-sm lg:text-lg 2xl:text-2xl">
             <h1 className="text-base md:text-lg lg:text-2xl 2xl:text-4xl text-wrap font-semibold uppercase pb-2 2xl:pb-4 bg-gradient-to-r from-robin-blue to-green-600 inline-block text-transparent bg-clip-text">Gemeinsam besser!</h1>
             <p className="">
-              EMI möchte auch in Zukunft die tollen Leistungen feiern, die ihr über das Semester gemeinsam erarbeitet!
+              EMI möchte auch in Zukunft die tollen Leistungen feiern, die die MDI-Studis über das Semester gemeinsam erarbeiten.
               <strong> Gemeinsam</strong> ist für ihn dabei ein besonders wichtiges Stichwort, denn nur so können Events wie das Meet-Up und
               die hier vorgestellten Projekte überhaupt möglich gemacht werden.
             </p>
             <p className="pt-2 2xl:pt-4">
-            Wie wichtig gute Zusammearbeit ist, zeigt auch die KI-Forschung: Allein schneidet KI in Aufgaben zwar teilweise besser ab als wir oder mit uns, aber gemeinsam 
+            Wie wichtig gute Zusammearbeit ist, zeigt auch die KI-Forschung: Allein schneidet KI in Aufgaben zwar teilweise besser ab als wir und auch im Vergleich mit uns zusammen, aber gemeinsam 
             mit KI sind wir besser als ohne! <em>Mensch und KI können gemeinsam mehr erreichen als alleine – wenn sie integriert arbeiten.</em> EMI möchte das mit einem Spiel testen:
             </p>
             <h1 className="pt-2 2xl:py-4 text-base md:text-lg lg:text-xl 2xl:text-4xl text-wrap font-semibold uppercase bg-gradient-to-r from-robin-blue to-green-600 inline-block text-transparent bg-clip-text">Welchen Score erreichst du?</h1>
             <ul className="list-disc px-4">
-              <li>Auf dem Spielfeld befinden sich <strong>100 Kästchen.</strong> <strong>Ziel</strong> ist, über Buttons anzugeben, 
-              ob mehr blaue oder grüne Kästchen vorhanden sind.</li>
-              <li>Die <strong>Anzahl</strong> an blauen und grünen Kästchen wechselt jede Runde.</li>
-              <li>Eine KI gibt dir pro Runde <strong>einen Hinweis</strong>, aber am Ende entscheidest du!</li>
-              <li>Am Ende kannst du detaillierte <strong>Auswertung</strong> erhalten!</li>
+              <li>Auf dem Spielfeld befinden sich <strong>100 Kästchen.</strong> Deine <strong>Aufgabe</strong> ist, die Spielfelder zu sortieren, indem 
+              du in jeder Runde (<FontAwesomeIcon icon="hashtag" size="xs" className="text-midnight-blue"/>) angibst, ob mehr blaue oder grüne Kästchen vorhanden sind.</li>
+              <li>Eine KI gibt dir pro Runde <strong>einen Hinweis</strong> und hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. 
+              ein Hinweis kann auch falsch sein. Du entscheidest!</li>
+              <li>Für deine Entscheidung hast du <strong>10 Sekunden</strong> (<FontAwesomeIcon icon="hourglass" size="xs" className="text-midnight-blue"/>) pro Runde Zeit. Wenn du nicht antwortest, erhältst du keine Punkte (<FontAwesomeIcon icon="star" size="xs" className="text-midnight-blue"/>) und es geht mit der nächsten Runde weiter.
+              Für jede richtige Antwort (<FontAwesomeIcon icon="check" size="xs" className="text-midnight-blue"/>) gibt es einen Punkt.</li>
+              <li>Am Ende kannst du eine <strong>Auswertung</strong> zu deinem Antwortverhalten erhalten!</li>
             </ul>
             <p className="pt-2 2xl:pt-4 sm:pt-2 lg:pt-0 self-center text-midnight-blue text-xs 2xl:text-lg">Quelle & Spielgrundlage: <a href="https://doi.org/10.1177/0018720817700258" target="_blank">
                 Bartlett, M. L., & McCarley, J. S. (2017). Benchmarking Aided Decision Making in a Signal Detection Task. <em>Human factors, 59</em>(6), 881–900. https://doi.org/10.1177/0018720817700258
@@ -117,7 +119,9 @@ function GoSpecials() {
                 </p>
                 <p className="px-4 py-2 text-silver-grey xl:text-xl 2xl:text-2xl">OR</p>
                 <a href="mailto:hello@humaide.com?subject=Kontaktanfrage&body=Hallo%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20bin%20auf%20eure%20Website%20gestoßen%20und%20würde%20mich%20sehr%20über%20eine%20Nachricht%20von%20euch%20freuen!%20">
-                    <button className="px-3 py-2 rounded-md border-2 bg-robin-blue border-robin-blue hover:border-midnight-blue hover:bg-robin-blue/20 hover:text-midnight-blue duration-300 shadow-md font-semibold text-base lg:text-lg xl:text-xl 2xl:text-3xl xl:px-8 xl:py-4">Send a message!</button>   
+                    <button className="px-3 py-2 rounded-md border-2 bg-robin-blue border-robin-blue hover:border-midnight-blue hover:bg-robin-blue/20 hover:text-midnight-blue duration-300 shadow-md font-semibold text-base lg:text-lg xl:text-xl 2xl:text-3xl xl:px-8 xl:py-4">
+                      Nachricht senden!
+                    </button>   
                 </a>                
               </div>
           </div>            
