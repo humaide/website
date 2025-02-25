@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function BartlettGame() {
     // game field setup
-    const gridSize = 10;
+    const gridSize = 75;
     const totalPixels = gridSize * gridSize;
 
     const generatePixelGrid = () => {
@@ -173,9 +173,9 @@ function BartlettGame() {
                 </div>                
             </div>
             {/* Gamefield */}
-            <div className="grid grid-cols-10 gap-0.5 p-2 bg-white rounded-md w-64 h-64 2xl:w-96 2xl:h-96">
+            <div className="grid grid-cols-75 gap-0 p-2 bg-white rounded-md w-64 h-64 2xl:w-96 2xl:h-96">
               {pixelGrid.pixels.map((color, index) => (
-                <div key={index} className="w-5 h-5 2xl:w-8 2xl:h-8" style={{ backgroundColor: color === "green" ? "#99FF65" : "#00D2D2" }}></div>
+                <div key={index} className="w-[0.2rem] h-[0.2rem] 2xl:w-1 2xl:h-1" style={{ backgroundColor: color === "green" ? "#99FF65" : "#00D2D2" }}></div>
               ))}
               {/* Overlay game end */}
               {showOverlay && (
@@ -232,7 +232,8 @@ function BartlettGame() {
               {/* Overlay game start */}
               {!isStarted && (
               <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-white text-lg absolute">
-                <p className="text-center p-4 font-semibold">Bist du bereit?</p> 
+                <p className="text-center px-4 pt-2 font-semibold">Bist du bereit?</p> 
+                <p className="text-center text-base italic px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
                   <button onClick={handleStartGame} className="px-6 py-2 duration-300 hover:border-robin-blue hover:bg-midnight-blue hover:text-white border-2 border-midnight-blue bg-robin-blue text-midnight-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
                     Start
                   </button>      
@@ -240,7 +241,7 @@ function BartlettGame() {
               {/* Overlay game end */}
               {showInfo && (
               <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute">
-                  <div className="flex flex-col p-2 items-center justify-center bg-robin-blue rounded-lg mx-2 w-full">
+                  <div className="flex flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 w-full">
                     <p className="font-semibold uppercase pt-2">Halbzeit!</p>
                     <p className="text-center pb-2">Noch 15 Runden. Zeit einmal durchzuatmen!</p>
                     <p className="text-center italic px-4">Tipp: Bisher lag die KI in {((correctHints / (round-1)) * 100).toFixed(0)}% der Runden richtig.</p> 
