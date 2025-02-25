@@ -66,7 +66,7 @@ function BartlettGame() {
       setScore(newScore);   
 
       // determine feedback and score   
-      if (round >= 10) {
+      if (round >= 30) {
         handleGameEnd();
         return;
       } else {
@@ -78,7 +78,7 @@ function BartlettGame() {
           setFeedback(null);
           setIsDisabled(false);   
           setTimerIsActive(true);    
-          if (round == 5) {
+          if (round == 15) {
             setShowInfo(true);
             setTimerIsActive(false);
             setIsDisabled(true);
@@ -92,7 +92,7 @@ function BartlettGame() {
     // update rounds
     const incrementRounds = () => {
         const updatedCount = round + 1;
-        if (updatedCount <= 10) {
+        if (updatedCount <= 30) {
             setRound(updatedCount);
         }
     }
@@ -161,7 +161,7 @@ function BartlettGame() {
             <div className="flex w-full justify-between items-center mb-4">
                 <div className="flex items-center">
                     <FontAwesomeIcon icon="hashtag" size="lg" className="text-white pr-2"/>
-                    <h2 className="text-xl 2xl:text-4xl font-semibold">{round} / 10</h2>                   
+                    <h2 className="text-xl 2xl:text-4xl font-semibold">{round} / 30</h2>                   
                 </div>
                 <div className={`flex items-center ${countdown <= 3 ? "text-bittersweet-red": "text-white"}`}>
                     <FontAwesomeIcon icon="hourglass" size="lg" className="pr-2"/>
@@ -179,7 +179,7 @@ function BartlettGame() {
               ))}
               {/* Overlay game end */}
               {showOverlay && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute">
+              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute rounded-md">
                   <div className="flex w-72 flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 shadow-2xl shadow-gray-800">
                     <p className="font-semibold text-xl p-2">Auswertung</p>
                     <div className="flex justify-evenly w-full py-2">
@@ -207,19 +207,11 @@ function BartlettGame() {
                         <FontAwesomeIcon icon="check" size="sm" className="text-teal-500 pr-2"/>
                         <p className="font-semibold text-lg">{((correctHints / (round)) * 100).toFixed(0)}%</p>                         
                       </div>  
-                      <div className="flex items-center justify-center">
-{/*                         <FontAwesomeIcon icon="hourglass" size="sm" className="text-midnight-blue pr-2"/>
-                        <p className="font-semibold text-xl">{averageTime}s*</p>    */}                      
+                      <div className="flex items-center justify-center">                     
                       </div>                      
                     </div>
                     <p className="text-center text-base px-4 font-semibold">Wir sind neugierig:</p> 
                     <p className="text-center text-base px-4">Hat der Hinweis in Runde 15 deine Entscheidungsstrategie beeinflusst?</p> 
-{/*                     <div className="flex items-center justify-center w-full mt-2">
-                      <input type="text" id="email" name="email" placeholder="example@email.com" className="w-5/6 px-4 py-2 bg-white border-2 border-midnight-blue rounded-lg text-base shadow-lg shadow-gray-600/60"></input>          
-                      <button onClick={generateDetails} className="w-1/6 px-2 bg-midnight-blue border-2 border-midnight-blue hover:bg-robin-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
-                        <FontAwesomeIcon icon="arrow-right" size="lg" className="text-white duration-300 py-2"/>
-                      </button>
-                    </div> */}
                     <a href="mailto:hello@humaide.com?subject=Meet-Up%20Game&body=Hey%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20habe%20auf%20dem%20Meet-Up%20an%20eurem%20Spiel%20teilgenommen.%20Der%20Hinweis%20zur%20Reliabilität%20hatte%20einen/keinen%20Einfluss%20auf%20meine%20Strategie:%20(Erzähl%20uns%20gerne%20mehr%20von%20deiner%20Strategie,%20wenn%20du%20magst!)">
                       <button className="w-full my-1 px-3 py-2 rounded-md border-2 bg-robin-blue text-midnight-blue border-robin-blue hover:bg-robin-blue/20 hover:border-midnight-blue duration-300 shadow-md font-semibold text-base xl:text-lg 2xl:text-3xl 2xl:px-8 2xl:py-4">
                         <FontAwesomeIcon icon="envelope" size="sm" className="pr-2"/>
@@ -231,16 +223,16 @@ function BartlettGame() {
               </div>)}
               {/* Overlay game start */}
               {!isStarted && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-white text-lg absolute">
+              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-white text-lg absolute rounded-md">
                 <p className="text-center px-4 pt-2 font-semibold">Bist du bereit?</p> 
                 <p className="text-center text-base italic px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
                   <button onClick={handleStartGame} className="px-6 py-2 duration-300 hover:border-robin-blue hover:bg-midnight-blue hover:text-white border-2 border-midnight-blue bg-robin-blue text-midnight-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
                     Start
                   </button>      
               </div>)}
-              {/* Overlay game end */}
+              {/* Overlay game middle */}
               {showInfo && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute">
+              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute rounded-md">
                   <div className="flex flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 w-full">
                     <p className="font-semibold uppercase pt-2">Halbzeit!</p>
                     <p className="text-center pb-2">Noch 15 Runden. Zeit einmal durchzuatmen!</p>
