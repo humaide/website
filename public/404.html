@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>    <script type="text/javascript">
-    //if (!window.location.hash) {
-    //  const path = window.location.pathname;
-    //  window.location.replace(`${window.location.origin}/#${path}`);
-    //}
-    const path = window.location.pathname;
-    let updatedUrl = window.location.origin + path;
-
-    // check www / https:www. - url
-    if (!hostname.startsWith("www.") && !`${protocol}//${hostname}`.startsWith("https://www.")) {
-      updatedUrl = `${protocol}//www.${hostname}${path}`;
-    }
-
-    // check #
     if (!window.location.hash) {
-      updatedUrl += `/#${path}`;
-    }
-
-    // redirect
-    if (updatedUrl !== window.location.href) {
-      window.location.replace(updatedUrl);
+      const path = window.location.pathname;
+      window.location.replace(`${window.location.origin}/#${path}`);
     }
   </script> 
   </head>
