@@ -10,8 +10,27 @@ function BartlettGame() {
       const greenCount = Math.floor(totalPixels / 2 + (Math.random() * 10 - 5)); // Slightly more green or blue
       const pixels = Array.from({ length: totalPixels }, (_, i) => (i < greenCount ? "green" : "blue"));
       pixels.sort(() => Math.random() - 0.5); // Shuffle pixels
+
+      while (checkColorCloseness(pixels)) {
+        pixels.sort(() => Math.random() - 0.5); // Nochmal mischen
+      }
+
       return { pixels, isGreenMajority: greenCount > totalPixels / 2 };
     };
+
+    // restrain pixels of same color next to each other to 10 
+    function checkColorCloseness(pixels) {
+      let count = 1;
+      for (let i = 1; i < pixels.length; i++) {
+        if (pixels[i] === pixels[i - 1]) {
+          count++;
+          if (count > 10) return true;
+        } else {
+          count = 1;
+        }
+      }
+      return false;
+    }
     
     // ai hints
     const generateAIHint = (isGreenMajority) => {
