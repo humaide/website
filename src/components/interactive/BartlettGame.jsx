@@ -230,7 +230,7 @@ function BartlettGame() {
                       </div>                      
                     </div>
                     <p className="text-center text-base px-4 font-semibold">Wir sind neugierig:</p> 
-                    <p className="text-center text-sm px-4 pb-2">Hat der Hinweis in Runde 15 deine Entscheidungsstrategie beeinflusst?</p> 
+                    <p className="text-center text-sm px-4 pb-2">Hat der Hinweis darauf, wie oft die KI in den ersten Runden richtig lag, deine Entscheidungsstrategie beeinflusst?</p> 
                     <a href="mailto:hello@humaide.com?subject=Meet-Up%20Game&body=Hey%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20habe%20auf%20dem%20Meet-Up%20an%20eurem%20Spiel%20teilgenommen.%20Der%20Hinweis%20zur%20Reliabilität%20hatte%20einen/keinen%20Einfluss%20auf%20meine%20Strategie:%20(Erzähl%20uns%20gerne%20mehr%20von%20deiner%20Strategie,%20wenn%20du%20magst!)">
                       <button className="w-full my-1 px-3 py-2 rounded-md border-2 bg-robin-blue text-midnight-blue border-robin-blue hover:bg-robin-blue/20 hover:border-midnight-blue duration-300 shadow-md font-semibold text-base xl:text-lg 2xl:text-3xl 2xl:px-8 2xl:py-4">
                         <FontAwesomeIcon icon="envelope" size="sm" className="pr-2"/>

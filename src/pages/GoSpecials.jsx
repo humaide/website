@@ -86,7 +86,7 @@ function GoSpecials() {
             </p>
             <h1 className="pt-2 2xl:py-4 text-base md:text-lg lg:text-xl 2xl:text-4xl text-wrap font-semibold uppercase bg-gradient-to-r from-robin-blue to-green-600 inline-block text-transparent bg-clip-text">Welchen Score erreichst du?</h1>
             <ul className="list-disc px-4">
-              <li>Auf dem Spielfeld befinden sich <strong>100 Kästchen.</strong> Deine <strong>Aufgabe</strong> ist, die Spielfelder zu sortieren, indem 
+              <li>Auf dem Spielfeld befinden sich <strong>75x75 Kästchen.</strong> Deine <strong>Aufgabe</strong> ist, die Spielfelder zu sortieren, indem 
               du in jeder Runde (<FontAwesomeIcon icon="hashtag" size="xs" className="text-midnight-blue"/>) angibst, ob mehr blaue oder grüne Kästchen vorhanden sind.</li>
               <li>Eine KI gibt dir pro Runde <strong>einen Hinweis</strong> und hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. 
               ein Hinweis kann auch falsch sein. Du entscheidest!</li>
