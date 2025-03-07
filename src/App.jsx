@@ -5,11 +5,11 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import GoSpecials from './pages/GoSpecials';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faXmark, faHashtag, faAnglesDown, faArrowRight, faHourglass, faStar, faCheck, faEnvelope, faRobot } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faHashtag, faAnglesDown, faArrowRight, faHourglass, faStar, faCheck, faEnvelope, faRobot, faChalkboardUser, faMagnifyingGlassChart, faGears } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 
-  library.add(faBars, faXmark, faHashtag, faAnglesDown, faArrowRight, faHourglass, faStar, faCheck, faEnvelope, faRobot)
+  library.add(faBars, faXmark, faHashtag, faAnglesDown, faArrowRight, faHourglass, faStar, faCheck, faEnvelope, faRobot, faChalkboardUser, faMagnifyingGlassChart, faGears)
 
   return (
     <>
