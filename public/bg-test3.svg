@@ -1,0 +1,6 @@
+<svg opacity="1" viewBox="0 0 701.4 117.60000000000001" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" style="max-height: 500px" width="701.4" height="117.60000000000001"><defs><linearGradient id="ffflux-gradient" y2="100%" x2="50%" y1="0%" x1="50%" gradientTransform="rotate(160, 0.5, 0.5)"><stop offset="0%" stop-opacity="1" stop-color="#870DBF"/><stop offset="100%" stop-opacity="1" stop-color="#63099C"/></linearGradient><filter color-interpolation-filters="sRGB" primitiveUnits="userSpaceOnUse" filterUnits="objectBoundingBox" height="140%" width="140%" y="-20%" x="-20%" id="ffflux-filter">
+  <feTurbulence result="turbulence" height="100%" width="100%" y="0%" x="0%" stitchTiles="stitch" seed="220" numOctaves="2" baseFrequency="0.004 0.004" type="fractalNoise"/>
+  <feGaussianBlur result="blur" edgeMode="duplicate" in="turbulence" height="100%" width="100%" y="0%" x="0%" stdDeviation="31 0"/>
+  <feBlend result="blend" in2="blur" in="SourceGraphic" height="100%" width="100%" y="0%" x="0%" mode="hard-light"/>
+  
+</filter></defs><rect filter="url(#ffflux-filter)" fill="url(#ffflux-gradient)" height="700" width="700"/></svg>

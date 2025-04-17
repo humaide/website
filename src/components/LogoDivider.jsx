@@ -1,12 +1,19 @@
+
+          
+
 function LogoDivider() {
     return (
-        <div className="flex flex-col w-full items-center justify-center -mt-36 lg:-mt-24">
-            <div className="w-full h-36 lg:h-64 bg-gray-200 relative">
-                <img src="/placeholder.jpg" alt="Humaide Logo with shine effect" className="w-full h-36 lg:h-72 xl:h-96 bg-cover"/>
-                <div className="w-full h-16 bg-robin-blue transform rotate-180 absolute -top-16" style={{ clipPath: 'polygon(0 0, 100% 0%, 0 100%)' }}></div>
-                <div className="w-full h-16 bg-robin-blue transform rotate-0 absolute lg:-bottom-24 xl:-bottom-48 z-2" style={{ clipPath: 'polygon(0 0, 100% 0%, 0 100%)' }}></div>
-            </div>
-            <img src="/logos/humaide-logo-shine.svg" alt="Humaide Logo with shine effect" className="w-3/4 min-[450px]:w-3/5 sm:w-1/2 lg:w-2/5 2xl:1/4 absolute z-50"/>    
+        <div className="flex flex-col w-full items-center justify-center">
+            <div className="bg-[url(/bg-test4-dark.svg)] bg-contain w-full h-60 absolute self-start justify-self-start"></div>
+            <div className="bg-gradient-to-b from-transparent via-transparent to-[#0C0F1F] w-full h-80 absolute self-start justify-self-start"></div>
+            <div className="w-full h-36 lg:h-64 bg-transparent relative"></div>
+            <div className="absolute flex flex-col w-full items-center justify-center -mt-52 lg:-mt-[15rem]">
+            <div className="absolute w-[12.25rem] h-[12.25rem] lg:w-[20.25rem] lg:h-[20.25rem] bg-sky-100 opacity-100 rounded-full animate-custom-pulse"></div>
+            <div className="absolute w-[12.25rem] h-[12.25rem] lg:w-[20.25rem] lg:h-[20.25rem] bg-sky-600 rounded-full opacity-45 animate-custom-pulse"></div>
+            <div className="absolute w-[11.5rem] h-[11.5rem] lg:w-[19.5rem] lg:h-[19.5rem] bg-sky-800 rounded-full opacity-45 animate-custom-pulse"></div>
+            <div className="absolute w-[10.75rem] h-[10.75rem] lg:w-[18.75rem] lg:h-[18.75rem] bg-[#0c0f1f] rounded-full opacity-45 animate-custom-pulse"></div>
+            <img src="/logos/humaide-logo-default1.svg" alt="Humaide Logo with shine effect" className="w-[10rem] lg:w-[18rem] 2xl:1/5 absolute z-50 rounded-full "/>    
+        </div>
         </div>
     );
   };

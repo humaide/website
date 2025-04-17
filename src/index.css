@@ -8,17 +8,50 @@
   src: url("/fonts/alte-din-1451-mittelschrift.regular.ttf") format("ttf")
 }
 
+
+.custom-font-2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-500 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
 @theme {
   --color-midnight-blue: #004A5F;
-  --color-robin-blue: #0FD2D2;
+  --color-robin-blue:  #0FD2D2;
   --color-bittersweet-red: #EE6353;
   --color-screaming-green: #99FF65;
   --color-silver-grey: #BBBEBF;
+  --color-indigo: #63099C;
+  --color-french:  #870DBF;
+  --color-yellow: #FFB62E;
+  --color-raisin: #1F1F25;
+  --color-night: #100D11;
   --breakpoint-xl: 75rem;
   --breakpoint-2xl: 125rem;
   --breakpoint-3xl: 150rem;
   --breakpoint-4xl: 250rem;
-  --font-din: "DIN 1451 Mittelschrift", sans-serif; 
+  /* --font-din: "DIN 1451 Mittelschrift", sans-serif;  */
+  --animate-custom-pulse: pulse cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes pulse {
+    50% {
+      opacity: 0.25;
+      filter: blur(0.8px);
+      animation-duration: 12s;
+      /* transform: scale(1.02); */
+    }
+  }
+  
 }
 
 html { scroll-behavior: smooth; }
@@ -33,4 +66,9 @@ html { scroll-behavior: smooth; }
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
+}
+
+
+.text-shadow-xl {
+  text-shadow: 1px 1px 80px lightblue;
 }
