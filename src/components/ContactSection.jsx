@@ -1,4 +1,3 @@
-import Header from "./Header"
 import ContactElement from "./ContactElement";
 import { motion } from "motion/react";
 
@@ -8,7 +7,7 @@ function ContactSection() {
       <>
         <div id="contact" className="h-full md:h-screen flex flex-col items-center justify-center px-4 lg:px-8 text-white bg-[#0C0F1F] font-din">
             <div className="w-full mb-2 flex justify-center items-center z-2">
-            <div className="bg-[url(/bg-test4-dark.svg)] bg-contain w-full h-60 absolute self-start justify-self-start"></div>
+            <div className="bg-[url(/bg-test5-dark.svg)] bg-contain w-full h-60 absolute self-start justify-self-start"></div>
             <div className="bg-gradient-to-b from-transparent via-transparent to-[#0C0F1F] w-full h-80 absolute self-start justify-self-start"></div>
             <motion.div transition={{ duration: 0.5, ease: "backIn"}} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} lang='en'  className={` text-shadow-xl flex flex-col text-white items-center justify-center w-full lg:px-28 2xl:px-44 max-lg:text-center my-16 z-50`}>
               <h1 className="uppercase font-sans font-light max-[375px]:text-base xl:text-2xl 2xl:text-4xl">contact details</h1>
@@ -19,17 +18,13 @@ function ContactSection() {
 
             <div className="w-full h-full flex flex-col md:flex-row items-center justify-center pb-10 md:mb-40 text-sm sm:text-base z-20">
               <div className="flex flex-col items-center justify-center w-full md:w-2/3 lg:w-1/2 h-full bg-sky-900/10 border-2 mx-4  mb-4 lg:mb-0 border-sky-500/40 rounded-lg drop-shadow-2xl shadow-black p-6 ">
-                {/* <ContactForm/> <div className="w-72 h-80 bg-white/20 m-8 rounded-lg duration-500 transform border-2 border-sky-500/40 hover:scale-110 hover:border-robin-blue/40"></div>*/}
                 <p className="text-lg text-center xl:text-2xl 2xl:text-4xl text-white pt-8 lg:pb-4 uppercase">
-                  <strong>Interested? Let's have a talk!</strong>
+                  <strong>Interested? Let's have a chat!</strong>
                 </p>
                 <p className="text-white text-base lg:text-lg py-4 lg:px-12 text-center">
                   Curious about what we can build together? Schedule a free 15-minute call with us! We’ll dive into your vision and see how we can help make it real.
                 </p>
                 <p className="text-white text-base lg:text-lg font-semibold pb-8 lg:px-8 text-center">Click below to pick a time that works for you!</p>
-{/*                 <a href="mailto:hello@humaide.com?subject=Kontaktanfrage&body=Hallo%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20bin%20auf%20eure%20Website%20gestoßen%20und%20würde%20mich%20sehr%20über%20eine%20Nachricht%20von%20euch%20freuen!%20">
-                  <button className="px-4 py-2 rounded-md border-2 bg-yellow border-yellow hover:bg-robin-blue hover:text-midnight-blue hover:border-robin-blue duration-300 shadow-md font-semibold xl:text-lg 2xl:text-4xl xl:px-8 xl:py-4">Send a message!</button>   
-                </a>  */}
                 <a href="https://calendly.com/hello-humaide/30min" target="_blank">
                 <button type="button" className="hover:cursor-pointer mb-4 font-semibold px-8 lg:px-4 py-2 2xl:px-6 2xl:py-3 4xl:px-8 4xl:py-5 rounded-full border-sky-600 bg-sky-500/70 hover:bg-sky-500/40 text-white text-base lg:text-lg duration-300">
                   Schedule your free 15-minute call

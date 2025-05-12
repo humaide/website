@@ -4,7 +4,7 @@
 function LogoDivider() {
     return (
         <div className="flex flex-col w-full items-center justify-center">
-            <div className="bg-[url(/bg-test4-dark.svg)] bg-contain w-full h-60 absolute self-start justify-self-start"></div>
+            <div className="bg-[url(/bg-test5-dark.svg)] bg-contain w-full h-60 absolute self-start justify-self-start"></div>
             <div className="bg-gradient-to-b from-transparent via-transparent to-[#0C0F1F] w-full h-80 absolute self-start justify-self-start"></div>
             <div className="w-full h-36 lg:h-64 bg-transparent relative"></div>
             <div className="absolute flex flex-col w-full items-center justify-center -mt-52 lg:-mt-[15rem]">

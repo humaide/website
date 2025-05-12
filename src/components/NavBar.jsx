@@ -38,6 +38,8 @@ function NavBar() {
                     <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-sky-500 duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-sky-700 w-full lg:w-fit text-center">About</HashLink>
                     <HashLink to="/#video" onClick={() => setIsOpen(!isOpen)} className="hover:text-sky-500 duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-sky-700  w-full lg:w-fit text-center">Resources</HashLink>   
                     <HashLink to="/#solutions" onClick={() => setIsOpen(!isOpen)} className="hover:text-sky-500 duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-sky-700  w-full lg:w-fit text-center">Solutions</HashLink>                    {/* <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-sky-500 duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b-2 lg:border-b-0 border-midnight-blue w-full lg:w-fit text-center" >Team</HashLink> */}                 
+                    <HashLink to="/#team" onClick={() => setIsOpen(!isOpen)} className="hover:text-sky-500 duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-sky-700  w-full lg:w-fit text-center">Team</HashLink>   
+
                 </div>
                 <div className="mx-4 my-1 2xl:mx-6 2xl:my-3 4xl:mx-8 4xl:my-5 py-2">
                     <HashLink to="/#contact" className="hover:text-robin-blue duration-300 transform hover:scale-110">

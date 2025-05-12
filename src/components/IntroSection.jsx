@@ -4,7 +4,7 @@ function IntroSection() {
 
     return (
       <>
-        <section id="intro" className="h-screen flex flex-col bg-[url(/bg-test4-white.svg)] text-raisin items-center justify-center">
+        <section id="intro" className="h-screen flex flex-col bg-[url(/bg-test5-white.svg)] text-raisin items-center justify-center">
             <div className="h-[25%] text-center 2xl:-mt-44 shdaow-2xl shadow-yellow-200">
                 <h1 className="text-4xl lg:text-7xl 3xl:text-[9rem] 4xl:text-[14rem] font-normal custom-font-1">Welcome to</h1>
                 <h2 className="text-5xl lg:text-8xl 3xl:text-[12rem] 4xl:text-[18rem] font-bold uppercase pt-2 custom-font-1">Hum<span className="relative bg-gradient-to-r from-indigo-500 to-sky-400 bg-clip-text text-transparent text-center select-auto">ai</span>de!</h2>
