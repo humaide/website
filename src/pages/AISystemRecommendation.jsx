@@ -94,10 +94,10 @@ export default function KIScoringTool() {
   return (
     <div className='w-full bg-[#0C0F1F]'>
         <div className="p-6 max-w-4xl mx-auto space-y-10 min-h-screen text-[#F5F5F5] font-sans w-full">
-            <motion.div transition={{ duration: 0.5, ease: "backIn"}} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} lang='en'  className={` text-shadow-xl flex flex-col text-white items-center justify-center w-full lg:px-28 2xl:px-44 max-lg:text-center mt-4 mb-6`}>
+            <motion.div transition={{ duration: 0.5, ease: "backIn"}} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} lang='en'  className={` text-shadow-xl flex flex-col text-white items-center justify-center w-full max-lg:text-center mt-4 mb-6`}>
               <h1 className="uppercase font-sans font-light max-[375px]:text-base xl:text-2xl 2xl:text-4xl custom-font-3">Scoring-tool</h1>
               <h2 className="uppercase font-bold text-2xl lg:text-[36px] 2xl:text-6xl py-1"><span className="relative bg-gradient-to-r  from-indigo-500 to-sky-300 bg-clip-text text-transparent text-center select-auto custom-font-1">Empfehlungen für KI-Systeme</span></h2>
-              <p className="text-lg lg:text-xl 2xl:text-4xl custom-font-2">Description</p>     
+              <p className="text-lg lg:text-xl 2xl:text-4xl custom-font-2 w-full text-center">Beantworten Sie die Fragen, um eine automatsierte Ersteinschätzung für den Einsatz von KI im Rahmen eines bestimmten Unternehmensprozesses zu erhalten.</p>     
             </motion.div>
 
         {Object.entries(questions).map(([blockKey, qs], bIndex) => {
