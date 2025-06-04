@@ -31,11 +31,15 @@ function BartlettGame() {
       }
       return false;
     }
-    
+
+    const [round, setRound] = useState(1);
+
     // ai hints
     const generateAIHint = (isGreenMajority) => {
       const correct = Math.random() < 0.8; // 80% chance of being correct
-      return correct ? (isGreenMajority ? "Ich schlage grün vor." : "Ich schlage blau vor.") : (isGreenMajority ? "Ich schlage blau vor." : "Ich schlage grün vor.");
+      //return correct ? (isGreenMajority ? "Ich schlage grün vor." : "Ich schlage blau vor.") : (isGreenMajority ? "Ich schlage blau vor." : "Ich schlage grün vor.");
+
+      return correct ? (round <= 2 ? "Du bist zuerst dran!" : isGreenMajority ? "Ich schlage gelb vor." : "Ich schlage blau vor.") : (round <= 2 ?  "Du bist zuerst dran!" : isGreenMajority ? "Ich schlage blau vor." : "Ich schlage gelb vor.");
     };
 
     // game content
@@ -43,7 +47,6 @@ function BartlettGame() {
     const [feedback, setFeedback] = useState(null);
     const [score, setScore] = useState(0);
     const [aiHint, setAiHint] = useState(generateAIHint(pixelGrid.isGreenMajority));
-    const [round, setRound] = useState(1);
     const [isDisabled, setIsDisabled] = useState(true);
     const [correctHints, setCorrectHints] = useState(0);
     // game start/end
@@ -64,7 +67,7 @@ function BartlettGame() {
       setIsDisabled(true);
       setCountdown(10);
       // count correct guesses from the ai
-      if ((aiHint.includes("grün") && pixelGrid.isGreenMajority) || (aiHint.includes("blau") && !pixelGrid.isGreenMajority)) {
+      if (round >= 3 && ((aiHint.includes("gelb") && pixelGrid.isGreenMajority) || (aiHint.includes("blau") && !pixelGrid.isGreenMajority))) {
         const updated = correctHints + 1
         setCorrectHints(updated);
       }
@@ -85,7 +88,7 @@ function BartlettGame() {
       setScore(newScore);   
 
       // determine feedback and score   
-      if (round >= 30) {
+      if (round >= 6) {
         handleGameEnd();
         return;
       } else {
@@ -97,7 +100,7 @@ function BartlettGame() {
           setFeedback(null);
           setIsDisabled(false);   
           setTimerIsActive(true);    
-          if (round == 15) {
+          if (round == 3) {
             setShowInfo(true);
             setTimerIsActive(false);
             setIsDisabled(true);
@@ -111,7 +114,7 @@ function BartlettGame() {
     // update rounds
     const incrementRounds = () => {
         const updatedCount = round + 1;
-        if (updatedCount <= 30) {
+        if (updatedCount <= 6) {
             setRound(updatedCount);
         }
     }
@@ -171,48 +174,48 @@ function BartlettGame() {
     }, [isTimerActive, seconds, countdown]);
   
     return (
-      <div className="flex flex-col items-center justify-center h-full w-full bg-white text-white font-din">
+      <div className="flex flex-col items-center justify-center h-screen w-full bg-white text-charcoal font-din">
 
         {/* Interactive Pixel Guessing Game */}
-        <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400">
-          <div className="flex flex-col items-center p-6 bg-midnight-blue rounded-t-lg shadow-md">
+        <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400 ">
+          <div className="flex flex-col items-center p-6 bg-charcoal rounded-t-lg shadow-md">
             {/* Stats */}
-            <div className="flex w-full justify-between items-center mb-4">
+            <div className="flex w-full justify-between items-center mb-4 text-white">
                 <div className="flex items-center">
                     <FontAwesomeIcon icon="hashtag" size="lg" className="text-white pr-2"/>
-                    <h2 className="text-xl 2xl:text-4xl font-semibold">{round} / 30</h2>                   
+                    <h2 className="text-xl 2xl:text-4xl font-light">{round} / 6</h2>                   
                 </div>
-                <div className={`flex items-center ${countdown <= 3 ? "text-bittersweet-red": "text-white"}`}>
+                <div className={`flex items-center ${countdown <= 3 ? "text-red-500": "text-white"}`}>
                     <FontAwesomeIcon icon="hourglass" size="lg" className="pr-2"/>
-                    <h2 className="text-xl 2xl:text-4xl font-semibold">{countdown}s</h2>                   
+                    <h2 className="text-xl 2xl:text-4xl font-light">{countdown}s</h2>                   
                 </div>
                 <div className="flex items-center">
                     <FontAwesomeIcon icon="star" size="lg" className="text-white pr-2"/>
-                    <h2 className="text-xl 2xl:text-4xl font-semibold">{score}</h2>                  
+                    <h2 className="text-xl 2xl:text-4xl font-light">{score}</h2>                  
                 </div>                
             </div>
             {/* Gamefield */}
             <div className="grid grid-cols-75 gap-0 p-2 bg-white rounded-md w-64 h-64 2xl:w-96 2xl:h-96">
               {pixelGrid.pixels.map((color, index) => (
-                <div key={index} className="w-[0.2rem] h-[0.2rem] 2xl:w-1 2xl:h-1" style={{ backgroundColor: color === "green" ? "#99FF65" : "#00D2D2" }}></div>
+                <div key={index} className="w-[0.2rem] h-[0.2rem] 2xl:w-1 2xl:h-1" style={{ backgroundColor: color === "green" ? "#FCFF35" : "#4D48E2" }}></div>
               ))}
               {/* Overlay game end */}
               {showOverlay && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute rounded-md">
+              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-lg absolute rounded-md">
                   <div className="flex w-72 flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 shadow-2xl shadow-gray-800">
                     <p className="font-semibold text-xl p-2">Auswertung</p>
-                    <div className="flex justify-evenly w-full py-2">
+                    <div className="flex justify-evenly w-full py-2 font-light">
                       <p className="font-semibold text-lg">DU:</p>
                       <div className="flex items-center justify-center">
                         <FontAwesomeIcon icon="star" size="sm" className="text-yellow-500 pr-1"/>
-                        <p className="font-semibold text-lg">{score}</p>                      
+                        <p className="font-semibold text-lg">{score} / 6</p>                      
                       </div>
                       <div className="flex items-center justify-center">
                         <FontAwesomeIcon icon="check" size="sm" className="text-green-500 pr-1"/>
                         <p className="font-semibold text-lg">{((score / (round)) * 100).toFixed(0)}%</p>                         
                       </div>  
                       <div className="flex items-center justify-center">
-                        <FontAwesomeIcon icon="hourglass" size="sm" className="text-bittersweet-red pr-1"/>
+                        <FontAwesomeIcon icon="hourglass" size="sm" className="text-red-500 pr-1"/>
                         <p className="font-semibold text-lg">{averageTime}s*</p>                         
                       </div>                      
                     </div>
@@ -220,68 +223,73 @@ function BartlettGame() {
                       <p className="font-semibold text-lg">KI:</p>
                       <div className="flex items-center justify-center">
                         <FontAwesomeIcon icon="star" size="sm" className="text-yellow-500 pr-2"/>
-                        <p className="font-semibold text-lg">{correctHints}</p>                      
+                        <p className="font-semibold text-lg">{correctHints} / 3</p>                      
                       </div>
                       <div className="flex items-center justify-center">
                         <FontAwesomeIcon icon="check" size="sm" className="text-teal-500 pr-2"/>
-                        <p className="font-semibold text-lg">{((correctHints / (round)) * 100).toFixed(0)}%</p>                         
+                        <p className="font-semibold text-lg">{((correctHints / (round/2)) * 100).toFixed(0)}%</p>                         
                       </div>  
                       <div className="flex items-center justify-center">                     
                       </div>                      
                     </div>
                     <p className="text-center text-base px-4 font-semibold">Wir sind neugierig:</p> 
                     <p className="text-center text-sm px-4 pb-2">Hat der Hinweis darauf, wie oft die KI in den ersten Runden richtig lag, deine Entscheidungsstrategie beeinflusst?</p> 
-                    <a href="mailto:hello@humaide.com?subject=Meet-Up%20Game&body=Hey%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20habe%20auf%20dem%20Meet-Up%20an%20eurem%20Spiel%20teilgenommen.%20Der%20Hinweis%20zur%20Reliabilität%20hatte%20einen/keinen%20Einfluss%20auf%20meine%20Strategie:%20(Erzähl%20uns%20gerne%20mehr%20von%20deiner%20Strategie,%20wenn%20du%20magst!)">
-                      <button className="w-full my-1 px-3 py-2 rounded-md border-2 bg-robin-blue text-midnight-blue border-robin-blue hover:bg-robin-blue/20 hover:border-midnight-blue duration-300 shadow-md font-semibold text-base xl:text-lg 2xl:text-3xl 2xl:px-8 2xl:py-4">
+                    {/* <a href="mailto:hello@humaide.com?subject=Meet-Up%20Game&body=Hey%20liebes%20HUMAIDE%20Team,%0D%0A%0D%0Aich%20habe%20auf%20dem%20Meet-Up%20an%20eurem%20Spiel%20teilgenommen.%20Der%20Hinweis%20zur%20Reliabilität%20hatte%20einen/keinen%20Einfluss%20auf%20meine%20Strategie:%20(Erzähl%20uns%20gerne%20mehr%20von%20deiner%20Strategie,%20wenn%20du%20magst!)">
+                      <button className="w-full my-1 px-3 py-2 rounded-md border-2 bg-robin-blue border-robin-blue hover:bg-robin-blue/20 hover:border-charcoal duration-300 shadow-md font-semibold text-base xl:text-lg 2xl:text-3xl 2xl:px-8 2xl:py-4">
                         <FontAwesomeIcon icon="envelope" size="sm" className="pr-2"/>
                         Erzähl uns davon!
                       </button>   
-                    </a> 
+                    </a>  */}
+                    <button onClick={continueAfterInfo} className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">
+                      <span className="text-base">Nochmal</span>
+                      <FontAwesomeIcon icon="play" size="sm" className="text-charcoal pl-2 pr-1"/>
+                    </button> 
                     <p className="text-xs py-2 italic">*Antwortzeit im Durchschnitt pro Runde</p>               
                   </div>
               </div>)}
               {/* Overlay game start */}
               {!isStarted && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-white text-lg absolute rounded-md">
-                <p className="text-center px-4 pt-2 font-semibold">Bist du bereit?</p> 
-                <p className="text-center text-base italic px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
-                  <button onClick={handleStartGame} className="px-6 py-2 duration-300 hover:border-robin-blue hover:bg-midnight-blue hover:text-white border-2 border-midnight-blue bg-robin-blue text-midnight-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
-                    Start
-                  </button>      
+              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-charcoal text-lg absolute rounded-md">
+                <div className="flex flex-col p-2 items-center justify-center bg-white rounded-lg w-[95%] h-[95%]">
+                    <p className="text-center px-4 py-2 font-semibold">Bist du bereit?</p> 
+                    <p className="text-center text-sm font-light px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
+                    <button onClick={handleStartGame} className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">
+                      <FontAwesomeIcon icon="play" size="sm" className="text-charcoal pr-1"/>
+                    </button>   
+                </div> 
               </div>)}
               {/* Overlay game middle */}
               {showInfo && (
               <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-midnight-blue text-lg absolute rounded-md">
-                  <div className="flex flex-col p-2 items-center justify-center bg-slate-100 rounded-lg mx-2 w-full">
-                    <p className="font-semibold uppercase pt-2">Halbzeit!</p>
-                    <p className="text-center pb-2">Noch 15 Runden. Zeit einmal durchzuatmen!</p>
-                    <p className="text-center text-sm italic pb-2 px-4">Tipp: Bisher lag die KI in {((correctHints / (round-1)) * 100).toFixed(0)}% der Runden richtig.</p> 
-                    <button onClick={continueAfterInfo} className="px-4 py-2 text-white duration-300 bg-midnight-blue border-2 border-midnight-blue hover:bg-robin-blue rounded-lg shadow-lg shadow-gray-600/60 ml-1">
-                        Weiter
-                    </button>
+                  <div className="flex flex-col p-2 items-center justify-center bg-white rounded-lg w-[95%] h-[95%]">
+                    <p className="font-semibold py-2">Halbzeit!</p>
+                    <p className="text-center text-sm font-light pb-2 px-3">Tipp: Für die letzten 3 Runden erhältst du zusätzlich einen KI Hinweis.</p> 
+                    <button onClick={continueAfterInfo} className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">
+                      <FontAwesomeIcon icon="play" size="sm" className="text-charcoal pr-1"/>
+                    </button> 
                   </div>
               </div>)}
 
             </div>
             {/* Buttons */}
             <div className="flex justify-between mt-4 space-x-4 w-full 2xl:text-2xl">
-              <button disabled={isDisabled} className="w-full px-7 py-2 bg-screaming-green hover:bg-screaming-green/75 hover:text-white duration-300 text-[#0A4A5F] rounded-md shadow-md" onClick={() => handleGuess("green")}>Grün</button>
-              <button disabled={isDisabled} className="w-full px-7 py-2 bg-robin-blue hover:bg-robin-blue/75 hover:text-white duration-300 text-[#0A4A5F] rounded-md shadow-md" onClick={() => handleGuess("blue")}>Blau</button>
+              <button disabled={isDisabled} className="w-full px-7 py-2 bg-tangerine hover:bg-tangerine/75 duration-300 rounded-md shadow-md" onClick={() => handleGuess("green")}>Gelb</button>
+              <button disabled={isDisabled} className="w-full px-7 py-2 bg-soft-blue hover:bg-soft-blue/75 hover:text-white duration-300 rounded-md shadow-md" onClick={() => handleGuess("blue")}>Blau</button>
             </div>
             {/* Feedback */}
             {feedback && 
-              <div className={`z-50 mt-4 text-white absolute rounded-lg px-4 py-2 ${feedback == "Richtig!" ? "bg-teal-600" : "bg-bittersweet-red"}`}>
+              <div className={`z-50 mt-4 text-white absolute rounded-lg px-4 py-2 ${feedback == "Richtig!" ? "bg-teal-600" : "bg-red-500"}`}>
                 <p className="text-xl font-bold">{feedback}
                 </p>                
               </div>
             }
           </div>
           {/* AI Hint Section */}
-          <div className="flex w-full bg-gradient-to-r from-robin-blue to-screaming-green rounded-b-md p-2">
-            <FontAwesomeIcon icon="robot" size="xl" className="bg-midnight-blue border-2 border-white rounded-full self-center py-3 px-2 mr-2"/>            
+          <div className="flex w-full bg-pastel-blue rounded-b-md p-2">
+            <FontAwesomeIcon icon="robot" size="xl" className="bg-charcoal/15 border-2 border-charcoal rounded-full self-center py-3 px-2 mr-2"/>            
             <div className="px-4 py-2 bg-white text-midnight-blue rounded-tl-none rounded-lg shadow-md w-full text-left">
                 <h3 className="text-sm 2xl:text-2xl font-semibold">KI HINWEIS</h3>
-                <p className="text-md 2xl:text-2xl font-medium">{aiHint}</p>
+                <p className="text-md 2xl:text-2xl font-light">{aiHint}</p>
             </div>            
           </div>
 

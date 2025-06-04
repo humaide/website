@@ -1,47 +1,16 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'DIN 1451 Mittelschrift';
-  font-style: normal;
-  font-weight: 200 400;
-  font-display: swap;
-  src: url("/fonts/alte-din-1451-mittelschrift.regular.ttf") format("ttf")
-}
-
-
-.custom-font-2 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.inter-500 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-
-
 @theme {
-  --color-midnight-blue: #004A5F;
-  --color-robin-blue:  #0FD2D2;
-  --color-bittersweet-red: #EE6353;
-  --color-screaming-green: #99FF65;
-  --color-silver-grey: #BBBEBF;
-  --color-indigo: #63099C;
-  --color-french:  #870DBF;
-  --color-yellow: #FFB62E;
-  --color-raisin: #1F1F25;
-  --color-night: #100D11;
+  --color-charcoal: #1B113C;
+  --color-soft-blue: #4D48E2;
+  --color-pastel-blue: #C3CDFF;
+  --color-tangerine: #FCFF35;
+
   --breakpoint-xl: 75rem;
   --breakpoint-2xl: 125rem;
   --breakpoint-3xl: 150rem;
   --breakpoint-4xl: 250rem;
-  /* --font-din: "DIN 1451 Mittelschrift", sans-serif;  */
+  --font-sans: "Public Sans", sans-serif;
   --animate-custom-pulse: pulse cubic-bezier(0.4, 0, 0.6, 1) infinite;
   @keyframes pulse {
     50% {
@@ -54,21 +23,169 @@
   
 }
 
-html { scroll-behavior: smooth; }
+.animated-background {
+    background-size: 400%;
+    -webkit-animation: animation 16s ease infinite;
+    -moz-animation: animation 16s ease infinite;
+    animation: animation 16s ease infinite;
+}
 
-.shiny-box {
-  padding: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.3); /* Leicht transparenter Rand */
-  border-radius: 10px; /* Abgerundete Ecken */
-  background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Glänzender Hintergrund */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-              inset 0 1px 6px rgba(255, 255, 255, 0.6); /* Glanz von innen */
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
+@keyframes animation {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 
-.text-shadow-xl {
-  text-shadow: 1px 1px 80px lightblue;
+html { scroll-behavior: smooth; }
+
+@layer utilities {
+  .wave-bg {
+    background-image: url('/bg/wave1.svg');
+  }
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}
+
+/* font */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/fonts/PublicSans/PublicSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
 }

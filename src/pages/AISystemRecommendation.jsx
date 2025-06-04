@@ -96,7 +96,7 @@ export default function KIScoringTool() {
         <div className="p-6 max-w-4xl mx-auto space-y-10 min-h-screen text-[#F5F5F5] font-sans w-full">
             <motion.div transition={{ duration: 0.5, ease: "backIn"}} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} lang='en'  className={` text-shadow-xl flex flex-col text-white items-center justify-center w-full max-lg:text-center mt-4 mb-6`}>
               <h1 className="uppercase font-sans font-light max-[375px]:text-base xl:text-2xl 2xl:text-4xl custom-font-3">Scoring-tool</h1>
-              <h2 className="uppercase font-bold text-2xl lg:text-[36px] 2xl:text-6xl py-1"><span className="relative bg-gradient-to-r  from-indigo-500 to-sky-300 bg-clip-text text-transparent text-center select-auto custom-font-1">Empfehlungen für KI-Systeme</span></h2>
+              <h2 className="uppercase font-bold text-2xl lg:text-[36px] 2xl:text-6xl py-1"><span className="relative bg-linear-to-r  from-indigo-500 to-sky-300 bg-clip-text text-transparent text-center select-auto custom-font-1">Empfehlungen für KI-Systeme</span></h2>
               <p className="text-lg lg:text-xl 2xl:text-4xl custom-font-2 w-full text-center">Beantworten Sie die Fragen, um eine automatsierte Ersteinschätzung für den Einsatz von KI im Rahmen eines bestimmten Unternehmensprozesses zu erhalten.</p>     
             </motion.div>
 
@@ -116,7 +116,7 @@ export default function KIScoringTool() {
                 {/* Fortschrittsbalken */}
                 <div className="w-full bg-[#333] h-2 rounded mb-6">
                     <div
-                    className="bg-gradient-to-r from-[#1E90FF] to-[#00C2FF] h-2 rounded transition-all duration-500"
+                    className="bg-linear-to-r from-[#1E90FF] to-[#00C2FF] h-2 rounded transition-all duration-500"
                     style={{ width: `${(Object.keys(answers[blockKey]).length / qs.length) * 100}%` }}
                     />
                 </div>
@@ -201,10 +201,10 @@ export default function KIScoringTool() {
                     <span>Summe: {sum} – <span className="text-[#1E90FF]">{rec}</span></span>
                     {rec.startsWith('⚠️') && (
                         <div className="relative inline-block">
-                        <span className="peer bg-gradient-to-br from-[#00A8FF] to-[#0072FF] text-white w-5 h-5 flex items-center justify-center rounded-full cursor-pointer select-none">
+                        <span className="peer bg-linear-to-br from-[#00A8FF] to-[#0072FF] text-white w-5 h-5 flex items-center justify-center rounded-full cursor-pointer select-none">
                             ?
                         </span>
-                        <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 peer-hover:opacity-100 transition-opacity pointer-events-none bg-gradient-to-r from-[#00A8FF] to-[#0072FF] text-white text-sm rounded p-2 w-64 z-10">
+                        <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 peer-hover:opacity-100 transition-opacity pointer-events-none bg-linear-to-r from-[#00A8FF] to-[#0072FF] text-white text-sm rounded p-2 w-64 z-10">
                             {tooltipMessages[blockKey]}
                         </div>
                         </div>
@@ -217,7 +217,7 @@ export default function KIScoringTool() {
         })}
 
         <div className="text-center">
-            <button type="button" onClick={resetForm} className="bg-gradient-to-r from-[#00A8FF] to-[#0072FF] text-white px-8 py-3 rounded-full hover:opacity-90 transition text-lg font-medium">
+            <button type="button" onClick={resetForm} className="bg-linear-to-r from-[#00A8FF] to-[#0072FF] text-white px-8 py-3 rounded-full hover:opacity-90 transition text-lg font-medium">
             Zurücksetzen
             </button>
         </div>

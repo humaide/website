@@ -8,11 +8,11 @@ function Contact() {
 
     return (
       <>
-        <div className="flex flex-col justify-center bg-[#0C0F1F] h-fit text-white px-4 lg:px-32 py-8 font-din">
+        <div className="flex flex-col justify-center bg-pastel-blue text-charcoal h-fit pt-20 px-4 lg:px-32 py-8 font-din">
             <div className="w-full flex items-center justify-between">
 
               <h1 className="font-semibold text-5xl py-8 uppercase"></h1>     
-              <button onClick={() => setLang(!lang)} className="hover:cursor-pointer px-4 py-2 border-2 border-sky-500 bg-sky-500 rounded-full hover:bg-sky-800 duration-300 shadow-md font-semibold">German</button>            
+              <button onClick={() => setLang(!lang)} className="w-32 hover:cursor-pointer px-4 py-2 border-2 border-soft-blue bg-soft-blue rounded-full hover:bg-soft-blue/80 text-white duration-300 shadow-md font-semibold">{lang ? "German" : "English"}</button>            
             </div>
 
             {lang ? (

@@ -1,24 +1,21 @@
+import DottedWave from '../assets/dotted/dotted-wave-light.svg'
 
-{/**bg-[url(/bg-test2.svg)] bg-cover  */}
 function IntroSection() {
 
     return (
-      <>
-        <section id="intro" className="h-screen flex flex-col bg-[url(/bg-test5-white.svg)] text-raisin items-center justify-center">
-            <div className="h-[25%] text-center 2xl:-mt-44 shdaow-2xl shadow-yellow-200">
-                <h1 className="text-4xl lg:text-7xl 3xl:text-[9rem] 4xl:text-[14rem] font-normal custom-font-1">Welcome to</h1>
-                <h2 className="text-5xl lg:text-8xl 3xl:text-[12rem] 4xl:text-[18rem] font-bold uppercase pt-2 custom-font-1">Hum<span className="relative bg-gradient-to-r from-indigo-500 to-sky-400 bg-clip-text text-transparent text-center select-auto">ai</span>de!</h2>
-                <h3 className="text-xl lg:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-8xl text-center pt-2 lg:pt-6 font-sans font-extralight">Human Minds in Automation</h3>
-                <h3 className="text-xl lg:text-3xl 2xl:text-4xl 3xl:text-6xl 4xl:text-8xl text-center italic font-sans font-extralight px-4">Integration Design for Empowerment</h3>                
+        <section id="intro" className="h-screen w-screen flex flex-col bg-pastel-blue text-charcoal items-center">
+            <div className='w-full h-full flex items-center px-8 lg:px-16'>
+              <div className="lg:w-1/2 z-120 text-left top-0 pt-10 lg:pt-0">
+                  <h1 className='text-3xl lg:text-5xl pb-3'>Unlock AI's potential with</h1>
+                  <img src="logos/logo-text-dark-accent.svg" alt="Humaide Logo" className="w-3/4 lg:w-full place-self-start"/>
+                  <p className='text-lg md:text-2xl font-light pt-6'>Create, integrate and use AI systems that serve humans in their task – not the other way around.</p>
+              </div>            
+              <div className='lg:w-2/3 absolute z-100 lg:z-5 right-0 top-16 lg:top-auto self-center lg:pt-20'>
+                <img src={DottedWave} alt="dotted wave illustration" className="w-full"/>
+              </div>                      
             </div>
-            <div className="h-[35%] text-center"></div>
+            <div className='w-full h-20 lg:h-1/3 absolute bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start scale-x-[-1] bottom-0'></div>
         </section>
-      </>
-    )
-
-
-
-
-  }
+    )}
   
   export default IntroSection

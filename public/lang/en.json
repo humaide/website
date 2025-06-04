@@ -1,0 +1,12 @@
+{
+    "nav": {
+        "label": "Select another language!",
+        "about": "About",
+        "home": "Home",
+        "resources": "Resources",
+        "solutions": "Solutions",
+        "team": "Team",    
+        "contact": "Contact us"    
+    }
+
+}
