@@ -15,7 +15,7 @@ function ContactSection() {
           <div className="flex flex-col lg:flex-row items-center justify-center hyphens-auto w-full px-4 lg:px-16 z-10" lang="en"> 
             <ContactCard title={"Let's Have a Chat"} content={"Schedule a free 15-minute call with us! Just pick a time that works best for you."} icon={"headset"}
             btn={"Schedule your call"} link={"https://calendly.com/hello-humaide/30min"}/>
-            <ContactCard title={"Email Us"} content={"Send us a message. We'll get right back to you!"} icon={"envelope"}
+            <ContactCard title={"Email Us"} content={"Send us a message via mail. We'll get right back to you!"} icon={"envelope"}
             btn={"Send a message"} link={"mailto:hello@humaide.com?subject=Kontaktanfrage"}/>
             <ContactCard title={"Visit our Socials"} content={"Stay connected and up to date with us through our channels."} icon={"hashtag"}
             btn={"View Youtube Channel"} link={"https://www.youtube.com/@HUMAIDE-Team"}/>          
