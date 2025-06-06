@@ -18,7 +18,7 @@ function IntroSection() {
               </div>                      
             </div>
             {/* Wave */}
-            <div className='w-full h-20 lg:h-1/3 bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start z-90'></div> 
+            <div className='w-full h-20 lg:h-1/3 lg:absolute bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start z-90 lg:bottom-0'></div> 
         </section>
     )}
   
