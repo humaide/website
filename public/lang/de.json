@@ -6,7 +6,72 @@
         "resources": "Ressourcen",
         "solutions": "Lösungen",
         "team": "Team",
-        "contact": "Kontaktiere uns"         
+        "contact": "Kontakt"         
+    },
+    "intro": {
+        "title": "Entfesseln Sie das Potenzial von KI mit",
+        "subtitle": "Entwickeln, integrieren und nutzen Sie KI-Systeme, die Menschen bei ihren Aufgaben dienen - nicht umgekehrt."
+    },
+    "about": {
+        "section": "Über Uns",
+        "title": "Was Wir Bieten",
+        "subtitle": "Menschen befähigen - für mehr Vertrauen, Kontrollierbarkeit und erfolgreiche Zusammenarbeit.",
+        "vision": "Unsere Vision",
+        "box-title-hcai": "Menschzentrierte KI",
+        "box-content-hcai": "Wir helfen Organisationen, KI-Systeme zu schaffen, zu integrieren oder zu nutzen, die den Menschen bei ihren Aufgaben unterstützen - nicht andersherum. Wir helfen dabei, KI-Systeme zu konzipieren und zu gestalten - mit Blick auf Vertrauen, Kontrollierbarkeit und Zusammenarbeit für KI, die Menschen befähigt.",
+        "box-title-aiact": "Vorbereitung auf den KI-VO",
+        "box-content-aiact": "Wir unterstützen Organisationen bei der Vorbereitung auf die europäische KI-Verordnung - proaktiv, praktisch und menschenzentriert. Mithilfe interner Tools und ISO/DIN-basierter Kriterien bewerten wir z. B. Maßnahmen zur menschlichen Aufsicht, Transparenz und Dokumentation, um die Revisionsfähigkeit zu unterstützen.",
+        "box-title-methods": "Wissenschaftliche Methoden",
+        "box-content-methods": "Wir setzen Forschung in die Praxis um - mit validierten Methoden aus der Kognitionswissenschaft und MCI wie dem Modell der Integrierten Informationsverarbeitung helfen wir Organisationen, KI zu gestalten, Nutzende zu schulen und Systeme zu entwickeln, die in reale Arbeitsumgebungen passen."
+    },
+    "video": {
+        "title": "Was gibt’s Neues?",
+        "content": "Entdecken Sie die neuesten Beiträge und Social-Media-Inhalte mit Einblicken in unsere Arbeit und informativen Perspektiven auf die sich entwickelnde Beziehung zwischen Mensch und Künstlicher Intelligenz.",
+        "btn-youtube": "Unser YouTube-Kanal"
+    },
+    "solutions": {
+        "section": "Unsere Dienstleistungen",
+        "title": "Menschzentrierte Lösungen",
+        "subtitle": "Beratung in allen Phasen der Integration.",
+        "box-title-concept": "Prozesskonzeption",
+        "box-content-concept": "Wir begleiten unsere Kund:innen beim Einstieg in die Integartion von KI, indem wir verstehen, wo und welche KI-Systeme benötigt werden. Wir analysieren Informationsflüsse, Nutzeraufgaben und die erforderlichen Kompetenzen von Mensch und KI. Unsere Expertise im Bereich erklärbare KI unterstützt das Design integrierter, vertrauenswürdiger KI-Systeme von Grund auf – für mehr Transparenz und Menschzentrierung.",
+        "box-btn-concept": "Termin buchen",
+        "box-title-evaluation": "Wirkungsevaluation",
+        "box-content-evaluation": "Wir evaluieren bestehende oder neu eingeführte Systeme auf ihre Menschenzentrierung, Transparenz und Effektivität - und bieten praktische Ratschläge für Verbesserungen. Dabei arbeiten wir mit allen Beteiligten zusammen, z. B. mit Digitalisierungsbeauftragten oder Betriebsräten. Außerdem unterstützen wir Organisationen bei der Anpassung an die Anforderungen der europäischen KI-Verordnung.",
+        "box-btn-evaluation": "Bericht ansehen",
+        "box-title-onboarding": "Einführung von Nutzenden",
+        "box-content-onboarding": "Künftige Anwendende sind vielleicht noch unsicher oder haben Angst, durch die Systeme nicht mehr gebraucht zu werden. Unsere Programme stellen sicher, dass Einzelpersonen und Teams die Kompetenz und das Vertrauen haben, mit intelligenten Systemen zu arbeiten. Wir vermitteln Nutzenden die Fähigkeiten, die sie benötigen, um KI effektiv, sicher und in Übereinstimmung mit den regulatorischen Erwartungen zu nutzen.",
+        "box-btn-onboarding": "Material anfordern"
+    },
+    "team": {
+        "section": "Unser Team",
+        "title": "Das Gründungsteam",
+        "subtitle": "Starke Unterstützung durch interdisziplinäre Expertise.",
+        "tim-position": "Strategie & Regiulation",
+        "tim-description": "Psychologe und Postdoktorand auf dem Gebiet der menschenzentrierten XAI. Erfahren in Fragen rund um die KI-Verordnung und Entwicklerin des integrierten Informationsverarbeitungsmodells.",
+        "luisa-position": "Betriebsleitung & Vertrieb",
+        "luisa-description": "Psychologin mit einem Hintergrund in kognitiven Systemen. Erfahren in der menschlichen Aufsicht über hochrisiko KI-Systeme und ausgebildet in Fähigkeitsanalysen und der Schulung von Nutzenden.",
+        "thomas-position": "Wissenschaft & Ökosystem",
+        "thomas-description": "Professor für Ingenieurpsychologie und kognitive Ergonomie. Experte für mentale Modelle, Gebrauchstauglichkeit und Nutzervielfalt.",
+        "michelle-position": "Technologie & Produkt",
+        "michelle-description": "Medieninformatikerin mit Schwerpunkt MCI und UX. Erfahren in der Gestaltung und Entwicklung interaktiver und menschenzentrierter Systeme."
+    },
+    "contact": {
+        "section": "Kontaktdetails",
+        "title": "Kontaktieren Sie Uns",
+        "subtitle": "Wir freuen uns darauf, von Ihnen zu hören!",
+        "box-title-call": "Lernen Sie uns persönlich kennen",
+        "box-content-call": "Vereinbaren Sie ein kostenloses 15-minütiges Gespräch mit uns!",
+        "box-btn-call": "Termin buchen",
+        "box-title-email": "Schreiben Sie uns",
+        "box-content-email": "Senden Sie uns eine Nachricht per E-Mail – wir melden uns umgehend bei Ihnen!",
+        "box-btn-email": "Nachricht senden",
+        "box-title-socials": "Besuchen Sie uns auf Social-Media",
+        "box-content-socials": "Bleiben Sie mit uns auf dem Laufenden über unsere Kanäle.",
+        "box-btn-socials": "Unser YouTube-Kanal"
+    },
+    "footer": {
+        "legal-notice": "Impressum"
     }
 
 }

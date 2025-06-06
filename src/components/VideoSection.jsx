@@ -2,16 +2,20 @@
 import Texture4 from '../assets/textures/texture-4.png'
 import Texture9 from '../assets/textures/texture-9.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from "react-i18next";
 
 function VideoSection() {
+
+    const { t } = useTranslation();
+
     return (
         <section id='video' className='bg-charcoal px-4 lg:px-16 h-full lg:h-screen flex flex-col lg:flex-row-reverse items-center justify-between'>
             <div className='lg:w-1/3 flex flex-col h-full lg:h-screen text-white text-center lg:text-right lg:pl-8 pt-16'>
-                <h2 className="font-bold text-2xl lg:text-6xl 2xl:text-6xl py-1">What's New?</h2>                
-                <p className='text-base lg:text-xl text-center lg:text-right py-6 z-20 hyphens-auto' lang='en'>Explore the latest videos and social media content, offering insights into our work and informative perspectives on the evolving relationship between humans and artificial intelligence.</p>
+                <h2 className="font-bold text-2xl lg:text-6xl 2xl:text-6xl py-1">{t("video.title")}</h2>                
+                <p className='text-base lg:text-xl text-center lg:text-right py-6 z-20 hyphens-auto' lang='en'>{t("video.content")}</p>
                 <a href="https://www.youtube.com/channel/UC92HAT4HI5KglkEDtIC0K5A" target="_blank" className='z-20 self-center lg:self-end'>
                     <button className="flex text-base lg:text-lg mt-4 mb-8 lg:mt-0 hover:cursor-pointer lg:mb-4 inter-500 px-4 py-2 2xl:px-6 2xl:py-3 4xl:px-8 4xl:py-5 rounded-full bg-soft-blue hover:bg-soft-blue/80 text-white duration-300">
-                        <p>Visit our Youtube-Channel</p>
+                        <p>{t("video.btn-youtube")}</p>
                         <FontAwesomeIcon icon="arrow-right-long" size="sm" className="text-white pl-2 pt-1.5"/>                
                     </button>
                 </a> 

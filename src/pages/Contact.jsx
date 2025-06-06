@@ -1,21 +1,17 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
-  const [lang, setLang] = useState(true);
+
+  const { i18n } = useTranslation();
   const [isHovered, setIsHovered] = useState(false);
   const realNumber = '1426-394';
-  
 
     return (
       <>
         <div className="flex flex-col justify-center bg-pastel-blue text-charcoal h-fit pt-20 px-4 lg:px-32 py-8 font-din">
-            <div className="w-full flex items-center justify-between">
 
-              <h1 className="font-semibold text-5xl py-8 uppercase"></h1>     
-              <button onClick={() => setLang(!lang)} className="w-32 hover:cursor-pointer px-4 py-2 border-2 border-soft-blue bg-soft-blue rounded-full hover:bg-soft-blue/80 text-white duration-300 shadow-md font-semibold">{lang ? "German" : "English"}</button>            
-            </div>
-
-            {lang ? (
+            {i18n.language === "en" ? (
               <>
                 <h1 className="font-semibold text-5xl py-8 uppercase">Legal Notice</h1>
                 <p><strong>HUMAIDE</strong></p>
