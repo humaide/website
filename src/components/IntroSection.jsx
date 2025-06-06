@@ -6,7 +6,7 @@ function IntroSection() {
     const { t } = useTranslation();
 
     return (
-        <section id="intro" className="h-screen w-screen flex flex-col bg-pastel-blue text-charcoal items-center">
+        <section id="intro" className="h-full lg:h-screen w-screen flex flex-col bg-pastel-blue text-charcoal items-center">
             <div className='w-full h-full flex items-center px-4 lg:px-16'>
               <div className="lg:w-1/2 z-120 text-left top-0 pt-10 lg:pt-0">
                   <h1 className='text-2xl lg:text-4xl font-medium pb-3'>{t("intro.title")}</h1>
