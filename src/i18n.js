@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 import i18nBackend from "i18next-http-backend";
 
 // @ts-ignore
-const getCurrentHost = import.meta.env.MODE === "development" ? "http://localhost:4000" : "https://www.humaide.com/#/";
+const getCurrentHost = import.meta.env.MODE === "development" ? "http://localhost:4000" : "https://www.humaide.com";
 
 i18n.use(i18nBackend).use(initReactI18next).init({
   lng: "en",
@@ -12,7 +12,7 @@ i18n.use(i18nBackend).use(initReactI18next).init({
     escapeValue: false,
   },
   backend: {
-      loadPath: `${getCurrentHost}/lang/{{lng}}.json`,
+      loadPath: `${getCurrentHost}/lang/${lng}.json`,
     },
 });
 
