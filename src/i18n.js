@@ -12,7 +12,7 @@ i18n.use(i18nBackend).use(initReactI18next).init({
     escapeValue: false,
   },
   backend: {
-      loadPath: `${getCurrentHost}/lang/${lng}.json`,
+      loadPath: `${getCurrentHost}/lang/{{lng}}.json`,
     },
 });
 
