@@ -15,11 +15,11 @@ function Home() {
     <div className='bg-pastel-blue overflow-clip font-sans'>
       <IntroSection/>
       {/* <BartlettGame /> */}
-      <AboutSection />
+      <AboutSection />  
       <VisionSection />
       <VideoSection />     
-              {/* Wave */}
-          <div className='w-full h-20 lg:h-1/3 absolute bg-[url(/bg/wave.svg)] bg-cover self-end justify-self-end rotate-180 z-90'></div>   
+      {/* Wave */}
+      <div className='w-full h-20 lg:h-1/3 absolute bg-[url(/bg/wave.svg)] bg-cover self-end justify-self-end rotate-180 z-90'></div>   
       {/* <ReportSection /> */}
       <SolutionsSection />
       {/* <Testimonials />       */}

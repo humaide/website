@@ -17,7 +17,8 @@ function IntroSection() {
                 <img src={DottedWave} alt="dotted wave illustration" className="w-full"/>
               </div>                      
             </div>
-            <div className='w-full h-20 lg:h-1/3 absolute bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start scale-x-[-1] bottom-0'></div>
+            {/* Wave */}
+            <div className='w-full h-20 lg:h-1/3 bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start z-90'></div> 
         </section>
     )}
   
