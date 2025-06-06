@@ -9,7 +9,7 @@ function AboutSection() {
     return (
         <section id="about" className="h-full lg:h-screen w-full flex flex-col text-charcoal bg-charcoal items-center justify-center font-sans px-4 lg:px-16">
           {/* Heading */}
-          <Heading postion={"text-left pt-10 lg:pt-0"} color={"text-white"} section={t("about.section")} title={t("about.title")} subtitle={t("about.subtitle")} />
+          <Heading postion={"text-left"} color={"text-white"} section={t("about.section")} title={t("about.title")} subtitle={t("about.subtitle")} />
           {/* Content Cards */}
           <div className="flex flex-col md:flex-row items-center justify-center hyphens-auto w-full py-20"> 
             <AboutCard illustration="hc" title={t("about.box-title-hcai")} content={t("about.box-content-hcai")} />
