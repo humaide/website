@@ -16,10 +16,10 @@
         "section": "Über Uns",
         "title": "Was Wir Bieten",
         "subtitle": "Menschen befähigen - für mehr Vertrauen, Kontrollierbarkeit und erfolgreiche Zusammenarbeit.",
-        "vision": "Unsere Vision",
+        "vision": "Unsere Mission",
         "box-title-hcai": "Menschzentrierte KI",
         "box-content-hcai": "Wir helfen Organisationen, KI-Systeme zu schaffen, zu integrieren oder zu nutzen, die den Menschen bei ihren Aufgaben unterstützen - nicht andersherum. Wir helfen dabei, KI-Systeme zu konzipieren und zu gestalten - mit Blick auf Vertrauen, Kontrollierbarkeit und Zusammenarbeit für KI, die Menschen befähigt.",
-        "box-title-aiact": "Vorbereitung auf den KI-VO",
+        "box-title-aiact": "Vorbereitung auf die KI-VO",
         "box-content-aiact": "Wir unterstützen Organisationen bei der Vorbereitung auf die europäische KI-Verordnung - proaktiv, praktisch und menschenzentriert. Mithilfe interner Tools und ISO/DIN-basierter Kriterien bewerten wir z. B. Maßnahmen zur menschlichen Aufsicht, Transparenz und Dokumentation, um die Revisionsfähigkeit zu unterstützen.",
         "box-title-methods": "Wissenschaftliche Methoden",
         "box-content-methods": "Wir setzen Forschung in die Praxis um - mit validierten Methoden aus der Kognitionswissenschaft und MCI wie dem Modell der Integrierten Informationsverarbeitung helfen wir Organisationen, KI zu gestalten, Nutzende zu schulen und Systeme zu entwickeln, die in reale Arbeitsumgebungen passen."
@@ -41,7 +41,25 @@
         "box-btn-evaluation": "Bericht ansehen",
         "box-title-onboarding": "Einführung von Nutzenden",
         "box-content-onboarding": "Künftige Anwendende sind vielleicht noch unsicher oder haben Angst, durch die Systeme nicht mehr gebraucht zu werden. Unsere Programme stellen sicher, dass Einzelpersonen und Teams die Kompetenz und das Vertrauen haben, mit intelligenten Systemen zu arbeiten. Wir vermitteln Nutzenden die Fähigkeiten, die sie benötigen, um KI effektiv, sicher und in Übereinstimmung mit den regulatorischen Erwartungen zu nutzen.",
-        "box-btn-onboarding": "Material anfordern"
+        "box-btn-onboarding": "Material anfordern",
+        "devTitle": "Sie entwickeln KI-Systeme",
+        "devSub": "So unterstützen wir KI-Hersteller",
+        "useTitle": "Sie setzen bereits KI ein ",
+        "useSub": "Unsere Leistungen für Unternehmen mit KI",
+        "exploreTitle": "Sie denken über KI nach – wissen aber nicht wie oder wo",
+        "exploreSub": "Starten Sie mit unserem kostenlosen Self-Check",
+        "devContentTitle": "Sie entwickeln – wir sorgen für Wirkung.",
+        "useContentTitle": "Sie setzen KI ein – wir machen sie nutzbar.",
+        "exploreContentTitle": "KI-Self-Check",
+        "devContentAudit": "Wir analysieren, wie Ihr KI-System in der Praxis funktioniert – mit Fokus auf Usability, mentale Modelle und psychologische Akzeptanz bei Nutzer:innen.",
+        "devContentAct": "Wir überprüfen Ihre Dokumentation und Mensch-Maschine-Interaktion im Hinblick auf den Europäischen AI Act – inklusive ISO 42001, Transparenz und Aufsichtsmaßnahmen.",
+        "devContentWorkshops": "Gemeinsam mit Ihren Produkt- und UX-Teams gestalten wir nutzerzentrierte KI – mit wissenschaftlich fundierten Methoden zur Vertrauensbildung und Akzeptanzförderung.",
+        "useContentCheck": "Kurzanalyse (5–10 Minuten), ob und wo KI in Ihren Prozessen echten Mehrwert bringt. Bewertet technische Machbarkeit, organisatorische Voraussetzungen und menschliche Faktoren – ohne Anmeldung.", 
+        "useContentEval": " Wir messen, wie Ihre KI im Alltag tatsächlich genutzt wird: Vertrauen, Kontrollierbarkeit, Wirksamkeit. Daraus leiten wir gezielte Optimierungen ab. ",
+        "useContentOnboarding": " Wir machen Teams fit für den KI-Einsatz – durch praxisnahe Schulungen, Rollenklärung und individuell angepasste Change-Begleitung.",
+        "exploreContentPackage": "Ein einfacher Einstieg, um herauszufinden, ob und wo KI in Ihrem Unternehmen sinnvoll eingesetzt werden kann – ohne Fachchinesisch oder Technikdruck.",
+        "exploreContentStrategy": "Wir hören zu, analysieren Ihre Situation und reflektieren gemeinsam realistische Use Cases – und wo KI vielleicht (noch) nicht passt.",
+        "exploreContentRoadmap": "Ein unverbindlicher, personalisierter Fahrplan auf Basis Ihrer Self-Check-Ergebnisse – mit Empfehlungen zu Potenzialen, Risiken und sinnvollen nächsten Schritten."
     },
     "team": {
         "section": "Unser Team",
@@ -72,6 +90,11 @@
     },
     "footer": {
         "legal-notice": "Impressum"
+    }, 
+    "mission": {
+        "title": "Unsere Vision",
+        "believe": "Wir glauben: KI entfaltet ihr Potenzial nur dann, wenn Technologie und Mensch gemeinsam wachsen.",
+        "text": "Allzu oft sind KI-Systeme technisch stark – aber werden nicht genutzt, nicht verstanden oder nicht akzeptiert. Hersteller entwickeln Lösungen, die nicht ankommen.  Unternehmen investieren viel – und ernten Frust, Unsicherheit oder Stillstand.  HUMAIDE steht für eine Zukunft, in der KI nicht nur entwickelt, sondern wirklich integriert wird – mit dem Menschen im Mittelpunkt. Wir bauen die Brücke zwischen denjenigen, die KI entwickeln, und denen, die sie nutzen sollen. Wir verbinden Innovation mit Vertrauen, Regulatorik mit Alltagstauglichkeit und Fortschritt mit Verantwortung. Mit psychologischem Know-how, durchdachten Tools und ethischem Prozessdesign machen wir KI nutzbar – nicht nur möglich. Denn nur menschzentrierte Integration schafft echten Mehrwert. "
     }
 
 }

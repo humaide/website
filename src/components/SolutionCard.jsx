@@ -9,7 +9,7 @@ function SolutionCard({ icon, color, title, content, btn }) {
   const { i18n } = useTranslation();
 
   return (
-        <div className="w-full h-2/3 lg:h-1/3 flex flex-col justify-end lg:p-6 text-charcoal text-sm bg-cover lg:m-2 rounded-lg duration-500 transform relative">            
+        <div className="w-full h-2/3 lg:h-1/3 flex flex-col justify-end lg:p-6 text-white text-sm bg-cover lg:m-2 rounded-lg duration-500 transform relative">            
             <div className="flex items-end pb-2">
                 <img src={icon === "evaluation" ? Evaluation : icon === "onboarding" ? Onboarding : Onboarding } alt="illustration" className="self-start h-12"/>
                 <h2 className="font-semibold px-3 text-2xl">{title}</h2>              

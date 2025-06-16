@@ -16,7 +16,7 @@
         "section": "About Us", 
         "title": "What We Offer",
         "subtitle": "Empowering humans – for more trust, controllability and successful collaboration.",
-        "vision": "Our Vision",
+        "vision": "Our Mission",
         "box-title-hcai": "Human-Centered AI",
         "box-content-hcai": "We help organizations create, integrate or use AI systems that serve humans in their task – not the other way around. We help to conceptualize and design AI systems – addressing trust, controllability, and collaboration for AI that empowers people.",
         "box-title-aiact": "AI Act Readiness",
@@ -41,7 +41,26 @@
         "box-btn-evaluation": "View our report",
         "box-title-onboarding": "Operator On-boarding",
         "box-content-onboarding": "Future AI operators may still experience insecurity or a fear of being obsolete. Readiness makes navigating change easier. Our programs ensure that individuals and teams have the competence and confidence to work with intelligent systems. We equip users with the skills needed to use AI effectively, safely, and in compliance with regulatory expectations.",
-        "box-btn-onboarding": "Request material"
+        "box-btn-onboarding": "Request material",
+        "devTitle": "You develop AI systems",
+        "devSub": "Explore our support for AI providers",
+        "useTitle": "You use AI in your organization",
+        "useSub": "See our services for AI users",
+        "exploreTitle": "You're just starting to explore AI",
+        "exploreSub": "Start with our free Self-Check",
+        "devContentTitle": "You build it – we make it usable.",
+        "useContentTitle": "You’ve bought AI – now let’s make it work.",
+        "exploreContentTitle": "You’re exploring – we provide clarity.",
+        "devContentAudit": "We assess how your AI system performs in real-world use. Based on usability testing, mental models, and psychological acceptance factors.",
+        "devContentAct": "We analyze your documentation and interaction flows in light of the European AI Act – including ISO 42001 alignment, transparency, and human oversight.",
+        "devContentWorkshops": "We co-create solutions with your product and UX teams. Based on scientific design principles, we help build trust and usability into your AI – before it hits the market.",
+        "useContentCheck": "Quick assessment (5–10 minutes) of AI potential across your processes. Evaluates technical feasibility, organizational readiness, and user impact – no login needed.", 
+        "useContentEval": "We measure how your AI system is actually used: does it create trust, controllability, and value? Our metrics reveal gaps and guide improvements.",
+        "useContentOnboarding": " We empower teams to work confidently with AI. Includes practical training, role alignment, and change facilitation tailored to different user types.",
+        "exploreContentPackage": "An accessible way to explore where AI could meaningfully support your organization – without tech jargon or hype.",
+        "exploreContentStrategy": "We listen, map your use cases, and reflect what level of AI makes sense – and what doesn’t.",
+        "exploreContentRoadmap": "A personalized, non-binding guide based on your Self-Check results and organizational context – including risks, value areas, and process recommendations."
+
     },
     "team": {
         "section": "Our Team",
@@ -72,5 +91,10 @@
     },
     "footer": {
         "legal-notice": "Legal Notice"
+    },
+    "mission": {
+        "title": "Our Vision",
+        "believe": "We believe that the real power of AI unfolds only when technology and people evolve together.",
+        "text": "Too often, AI solutions are technically brilliant – but misunderstood, unused, or mistrusted. Manufacturers see promising systems fail to gain traction. Organizations invest heavily – only to face resistance, confusion, or inefficiency. At HUMAIDE, we envision a world where AI systems are not just built, but truly integrated – with people at the center. We bridge the gap between creators and users, aligning innovation with understanding, regulation with usability, and ambition with acceptance. With psychological insight, structured tools, and ethical design, we ensure AI works with people – not despite them. Because only human-centered integration turns potential into real-world value. "
     }
 }
