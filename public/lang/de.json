@@ -64,15 +64,15 @@
     "team": {
         "section": "Unser Team",
         "title": "Das Gründungsteam",
-        "subtitle": "Starke Unterstützung durch interdisziplinäre Expertise.",
+        "subtitle": "Interdisziplinär. Wissenschaftlich fundiert. Praxisnah.",
         "tim-position": "Strategie & Regiulation",
-        "tim-description": "Psychologe und Postdoktorand auf dem Gebiet der menschenzentrierten XAI. Erfahren in Fragen rund um die KI-Verordnung und Entwicklerin des integrierten Informationsverarbeitungsmodells.",
+        "tim-description": "Doktor der erklärbaren, menschenzentrierten KI. Entwickler des Modells der Integrierten Informationsverarbeitung und Berater für strategische KI-Integration und Anforderungen des AI Act.",
         "luisa-position": "Betriebsleitung & Vertrieb",
-        "luisa-description": "Psychologin mit einem Hintergrund in kognitiven Systemen. Erfahren in der menschlichen Aufsicht über hochrisiko KI-Systeme und ausgebildet in Fähigkeitsanalysen und der Schulung von Nutzenden.",
+        "luisa-description": "Psychologin mit Masterabschluss in kognitiven Systemen und Schwerpunkt auf Mensch-Technik-Interaktion. Berät Unternehmen bei der nutzerzentrierten Einführung und Umsetzung von KI-Systemen.",
         "thomas-position": "Wissenschaft & Ökosystem",
-        "thomas-description": "Professor für Ingenieurpsychologie und kognitive Ergonomie. Experte für mentale Modelle, Gebrauchstauglichkeit und Nutzervielfalt.",
+        "thomas-description": "Professor für Ingenieurpsychologie und kognitive Ergonomie. Experte für mentale Modelle, Usability und Nutzerdiversität – wissenschaftlicher Sparringspartner und Impulsgeber im HUMAIDE-Team.",
         "michelle-position": "Technologie & Produkt",
-        "michelle-description": "Medieninformatikerin mit Schwerpunkt MCI und UX. Erfahren in der Gestaltung und Entwicklung interaktiver und menschenzentrierter Systeme."
+        "michelle-description": "Medieninformatikerin mit Schwerpunkt Human-Computer Interaction. Entwickelt erklärbare, interaktive KI-Anwendungen mit starkem UX-Fokus – darunter auch unsere nutzerzentrierten Inhouse-Tools."
     },
     "contact": {
         "section": "Kontaktdetails",

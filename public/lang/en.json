@@ -65,15 +65,15 @@
     "team": {
         "section": "Our Team",
         "title": "Meet The Founder",
-        "subtitle": "Strong support through interdisciplinary expertise.",
+        "subtitle": "Interdisciplinary. Grounded in science. Practice-oriented.",
         "tim-position": "Strategy & Regulation",
-        "tim-description": "Psychologist and post-doc in human-centered XAI. Experienced in questions surrounding the AI act and creator of the integrated information processing model.",
+        "tim-description": "PhD in explainable, human-centered AI. Developer of the Integrated Information Processing Model and advisor on strategic AI integration and AI Act requirements.",
         "luisa-position": "Operations & Sales",
-        "luisa-description": "Psychologist with a background in cognitive systems. Experienced in human oversight for high-risk AI-systems and trained in capability analyses and operator training.",
+        "luisa-description": "Psychologist with a Master’s in Cognitive Systems and a focus on human-technology interaction. Advises organizations on user-centered implementation and adoption of AI systems.",
         "thomas-position": "Science & Ecosystem",
-        "thomas-description": "Professor for Engineering Psychology and Cognitive Ergonomics. Expert in mental models, usability, and user diversity.",
+        "thomas-description": "Professor of Engineering Psychology and Cognitive Ergonomics. Expert in mental models, usability, and user diversity – scientific advisor and strategic thought partner at HUMAIDE. ",
         "michelle-position": "Technology & Product",
-        "michelle-description": "Media informatics specialist with a focus on HCI and UX. Experienced in the design and development of interactive and human-centered systems."
+        "michelle-description": "Media informatics specialist focused on Human-Computer Interaction. Designs explainable, interactive AI applications with a strong UX focus – including our user-centered in-house tools."
     },
     "contact": {
         "section": "Contact Details",

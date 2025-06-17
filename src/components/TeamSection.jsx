@@ -21,15 +21,15 @@ function TeamSection() {
                     <div className='lg:w-1/2 flex flex-col sm:flex-row'>
                         <div className='flex flex-col mr-3 mb-4 w-full'>
                             <img className="object-cover" src={timImage} alt="Image Tim" />  
-                            <p className='pt-4 font-semibold text-lg'>Tim Schrills</p>
-                            <p className='pb-4 font-light text-lg'>{t("team.tim-position")}</p> 
+                            <p className='pt-4 font-semibold text-lg'>Dr. Tim Schrills</p>
+                            {/* <p className='pb-4 font-light text-lg'>{t("team.tim-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.tim-description")}</p>  
                         </div>
 
                         <div className='flex flex-col mr-3 mb-4 w-full'>
                             <img className="object-cover" src={luisaImage} alt="Image Tim" />  
-                            <p className='pt-4 font-semibold text-lg'>Luisa Winzer</p>
-                            <p className='pb-4 font-light text-lg'>{t("team.luisa-position")}</p> 
+                            <p className='pt-4 font-semibold text-lg'>Luisa Winzer, M. Sc.</p>
+                            {/* <p className='pb-4 font-light text-lg'>{t("team.luisa-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.luisa-description")}</p>  
                         </div>
                     </div>
@@ -37,15 +37,15 @@ function TeamSection() {
                     <div className='lg:w-1/2 flex flex-col sm:flex-row'>
                         <div className='flex flex-col mr-3 mb-4 w-full'>
                             <img className="object-cover" src={thomasImage} alt="Image Tim" />  
-                            <p className='pt-4 font-semibold text-lg'>Thomas Franke</p>
-                            <p className='pb-4 font-light text-lg'>{t("team.thomas-position")}</p> 
+                            <p className='pt-4 font-semibold text-lg'>Prof. Dr. Thomas Franke</p>
+                            {/* <p className='pb-4 font-light text-lg'>{t("team.thomas-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.thomas-description")}</p>  
                         </div>
 
                         <div className='flex flex-col mr-3 mb-4 w-full'>
                             <img className="object-cover" src={michelleImage} alt="Image Tim" />  
-                            <p className='pt-4 font-semibold text-lg'>Michelle Wrage</p>
-                            <p className='pb-4 font-light text-lg'>{t("team.michelle-position")}</p> 
+                            <p className='pt-4 font-semibold text-lg'>Michelle Wrage, B. Sc.</p>
+                            {/* <p className='pb-4 font-light text-lg'>{t("team.michelle-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.michelle-description")}</p>  
                         </div>
                     </div>
