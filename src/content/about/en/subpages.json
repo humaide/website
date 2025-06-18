@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Human-Centered AI",
+    "subtitle": "Human-Centered AI means designing systems that adapt to people – not the other way around. That’s what we specialize in.",
+    "mainContent": 
+        [
+          "### Why should I care?",
+          "AI is transforming how we work – but technical excellence alone isn’t enough. Many systems fail not because of poor algorithms, but because humans don’t trust, understand, or use them properly. Trust, control, and collaboration are essential if AI is to deliver real impact. ",
+          "### The Bartlett Study: Can humans make better decisions with AI?",
+          "In a scientific study by Steven Bartlett and colleagues, participants were asked to make decisions – with and without AI support. The result: human-AI collaboration can significantly improve decision-making. But only if people trust the system – and know when to rely on it."
+        ],
+    "callToAction": "We’ve recreated the task from this study for you. Try it yourself – and see how your decisions change with AI assistance.",
+    "image": "/images/about.jpg",
+    "ref": "bartlett",
+    "resourceTitle": "Benchmarking Aided Decision Making in a Signal Detection Task",
+    "resourceYear": "2017",
+    "resourceAuthors": "M. L. Bartlett, J. S. McCarley",
+    "resourceLink": "https://doi.org/10.1177/0018720817700258"
+  },
+  {
+    "title": "AI Act Readiness",
+    "subtitle": "AI Act Readiness means acting early, practically, and human-centered. We support organizations in aligning their systems with upcoming regulations – without losing speed or user trust.",
+    "mainContent": 
+      [
+        "### Why should I care?",
+        "The European AI Act will fundamentally reshape how AI is governed. For many organizations, this means new documentation duties, transparency requirements, and human oversight obligations. Delaying preparation risks not just compliance failures – but reputational damage and costly setbacks.",
+        "The European AI Act doesn’t just apply to tech giants. It affects any company that builds, integrates, or uses AI systems – across industries like manufacturing, healthcare, HR, finance, or public administration. If your software supports or automates decision-making – it’s likely in scope. And the principle is: The higher the risk a system poses to humans, the stricter the regulations.",
+        "### Why should care?",
+        "* **Software providers** integrating AI into products (e.g. recommender systems, chatbots, predictive models)",
+        "* **Industrial companies** using AI for quality control, predictive maintenance, or automation",
+        "* **HR departments** applying AI for resume screening or automated assessments",
+        "* **Healthcare providers** using AI in diagnostics or triage",
+        "* **Public institutions and insurance companies** relying on algorithmic decision-making",
+        "* **Startups** developing AI-driven innovations for regulated markets",
+        "### The KI-VO Tool: Is your AI regulation-ready?",
+         "Our interactive KIVO Assistant helps you assess whether your AI system documentation meets key AI Act requirements – including transparency obligations, human oversight, and risk assessment."
+      ],
+    "callToAction": "Take a look at the tool in practice",
+    "image": "/images/about.jpg",
+    "ref": "kivo",
+    "resourceTitle": "ISO/IEC 42001:2023 - Information technology — Artificial intelligence — Management system",
+    "resourceYear": "2023",
+    "resourceAuthors": "International Organization for Standardization, International Electrotechnical Commission",
+    "resourceLink": "https://www.iso.org/standard/81230.html"
+  },
+  {
+    "title": "Scientific Methods",
+    "subtitle": "We translate research into practice – with validated methods from cognitive science and human-computer interaction.",
+    "mainContent": 
+      [
+        "### Why should I care?",
+        "AI systems often fail in the real world – not because of bad code, but because they ignore how people think, decide, and act. Scientific methods help bridge that gap: turning technically sound systems into tools that actually work in real environments.",
+        "We translate proven models from cognitive science and human-computer interaction into practice – so AI systems become more intuitive, explainable, and effective.",
+        "### The IIP Model: How do humans process information?",
+        "The Integrated Information Processing (IIP) Model (Schrills, 2024) explains how people perceive, interpret, and act on information – especially in complex or semi-automated settings. It reveals where users may be confused, misled, or misaligned – and how to better match AI systems to human thinking. It’s built around three key concepts:",
+        "* **Input Adequacy** – Is incoming data complete and understandable for the user? ",
+        "* **Reference Consonance** – Does the system’s logic match the user's expectations or mental model? ",
+        "* **Output Diagnosticity** – Does the output help distinguish between real alternatives?",
+        "### Use cases: How does this help in practice?",
+        "*More sector-specific examples coming soon – or just reach out to us.*"
+      ],
+    "callToAction": "",
+    "image": "/images/about.jpg",
+    "ref": "iip",
+    "resourceTitle": "Integrating humans and artificial intelligence in diagnostic tasks",
+    "resourceYear": "2024",
+    "resourceAuthors": "T. Schrills",
+    "resourceLink": "https://epub.uni-luebeck.de/handle/zhb_hl/3417"
+  }
+]

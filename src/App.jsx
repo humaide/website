@@ -9,12 +9,19 @@ import AISystemRecommendation from "./pages/AISystemRecommendation"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faXmark, faHashtag, faAnglesDown, faArrowRight, faHourglass, faStar, faCheck, faEnvelope, faRobot, faChalkboardUser, faMagnifyingGlassChart, faGears, faPlay, faUsersViewfinder, faScrewdriverWrench, faCheckDouble, faHeadset, faCopyright, faArrowRightLong, faCode, faUser, faCompass } from '@fortawesome/free-solid-svg-icons'
 import AboutSubContent from "./components/AboutSubContent";
-import subpages from "./content/about/subpages";
+import { useTranslation } from "react-i18next";
+import subpages_EN from "./content/about/en/subpages";
+import subpages_DE from "./content/about/de/subpages";
 
 const DynamicPage = () => {
   const { pageId } = useParams();
-  const content = subpages[pageId];
-  console.log(subpages)
+  const { i18n } = useTranslation();
+  let content;
+  if (i18n.language === "de") {
+    content = subpages_DE[pageId];
+  } else {
+    content = subpages_EN[pageId];
+  }
 
   if (!content) return <div>Seite nicht gefunden</div>;
 

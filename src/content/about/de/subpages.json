@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Mensch-zentrierte KI",
+    "subtitle": "Menschzentrierte KI bedeutet: KI so zu gestalten, dass sie sich an den Menschen anpasst – nicht umgekehrt. Wir helfen dabei, genau das umzusetzen.",
+    "mainContent": 
+        [
+          "### Warum sollte mich das interessieren?",
+          "Künstliche Intelligenz verändert unsere Arbeitswelt – schneller, als viele Organisationen Schritt halten können. Aber technologische Exzellenz allein reicht nicht: Systeme scheitern nicht an der Technik, sondern an den Menschen, die sie nutzen (oder eben nicht nutzen). Vertrauen, Kontrollierbarkeit und Zusammenarbeit sind entscheidend, wenn KI wirklich Wirkung entfalten soll.",
+          "### Die Bartlett-Studie: Können Menschen mit KI besser entscheiden?",
+          "In einer wissenschaftlichen Studie von Steven Bartlett und Kolleg:innen wurde untersucht, wie Menschen Entscheidungen treffen – mit und ohne Unterstützung durch KI. Die überraschende Erkenntnis: Die Kombination aus menschlicher Intuition und algorithmischer Empfehlung kann zu signifikant besseren Ergebnissen führen. Aber nur, wenn Menschen der KI vertrauen – und verstehen, wann sie ihr folgen sollten." 
+        ],
+    "callToAction": "Wir haben die Entscheidungsaufgabe aus dieser Studie für Sie nachgebaut. Probieren Sie es selbst aus – und erleben Sie, wie sich Ihre Entscheidungen mit KI-Unterstützung verändern.",
+    "image": "/images/about.jpg",
+    "ref": "bartlett",
+    "resourceTitle": "Benchmarking Aided Decision Making in a Signal Detection Task",
+    "resourceYear": "2017",
+    "resourceAuthors": "M. L. Bartlett, J. S. McCarley",
+    "resourceLink": "https://doi.org/10.1177/0018720817700258"
+  },
+  {
+    "title": "AI Act Readiness",
+    "subtitle": "AI Act Readiness heißt: frühzeitig verstehen, was auf Sie zukommt – und gezielt handeln, bevor Regulierung zur Blockade wird. Wir helfen Organisationen dabei, ihre Systeme proaktiv, praktisch und menschenzentriert vorzubereiten.",
+    "mainContent": 
+      [
+        "### Warum sollte mich das interessieren?",
+        "Der europäische AI Act wird die Spielregeln für KI grundlegend verändern. Für viele Organisationen bedeutet das: neue Dokumentationspflichten, Anforderungen an Transparenz und Maßnahmen zur menschlichen Aufsicht. Wer zu spät reagiert, riskiert nicht nur rechtliche Probleme – sondern auch Reputationsverlust und technische Sackgassen. ",
+        "Der europäische AI Act betrifft nicht nur Tech-Giganten oder Spezialisten – sondern jedes Unternehmen, das KI-Systeme entwickelt, integriert oder nutzt. Egal ob in der Industrie, Verwaltung, Medizin oder im HR-Bereich: Wenn Ihre Software Entscheidungen unterstützt oder automatisiert – ist sie potenziell betroffen. Und es gilt: Je höher das Risiko, das ein System für Menschen birgt, desto strenger die Vorgaben.",
+        "### Why should care?",
+        "* **Softwarehersteller**, die KI-gestützte Module in ihre Produkte integrieren (z. B. Empfehlungssysteme, Chatbots, Prognosemodelle)",
+        "* **Industrieunternehmen**, die KI für Qualitätskontrolle, Wartung oder Automatisierung einsetzen",
+        "* **Personalabteilungen**, die Tools zur automatisierten Bewerberauswahl oder -bewertung nutzen ",
+        "* **Medizinische Einrichtungen** mit KI-Diagnostiksystemen oder Triage-Tools ",
+        "* **Behörden oder Versicherungen**, die algorithmische Entscheidungen treffen lassen (z. B. Risikobewertungen, Anträge, Scoring)",
+        "* **Startups**, die KI-gestützte Innovationen auf den Markt bringen wollen ",
+        "Kurz: Wenn Ihre KI Menschen betrifft – betrifft Sie auch der AI Act. ",
+        "### Das KIVO-Tool: Wie „verordnungstauglich“ ist Ihre KI?",
+        "Mit unserem interaktiven KI-Verordnungsagenten (KIVO) können Sie prüfen, ob Ihre Dokumentation den Anforderungen des AI Act standhält – z. B. in Bezug auf Transparenzpflichten, menschliche Aufsicht und Risikobewertung."
+      ],
+    "callToAction": "Sieh es dir in der Praxis an",
+    "image": "/images/about.jpg",
+    "ref": "kivo",
+    "resourceTitle": "ISO/IEC 42001:2023 - Information technology — Artificial intelligence — Management system",
+    "resourceYear": "2023",
+    "resourceAuthors": "International Organization for Standardization, International Electrotechnical Commission",
+    "resourceLink": "https://www.iso.org/standard/81230.html"
+  },
+  {
+    "title": "Wissen-schaftliche Methoden",
+    "subtitle": "We translate research into practice – with validated methods from cognitive science and human-computer interaction.",
+    "mainContent": 
+      [
+        "### Warum sollte mich das interessieren?",
+        "Wenn KI-Systeme in der Praxis scheitern, liegt das oft nicht an schlechter Technik – sondern an einem fehlenden Verständnis dafür, wie Menschen denken, entscheiden und arbeiten. Wissenschaftlich fundierte Methoden helfen, genau das zu überbrücken: Sie machen aus technischen Systemen brauchbare Werkzeuge für reale Arbeitswelten.",
+        "Wir bringen bewährte Modelle aus der Kognitionswissenschaft und Human-Computer-Interaction in die Praxis – damit KI-Systeme intuitiv, verständlich und wirksam werden.",
+        "### Das IIP-Modell: Wie verarbeiten Menschen Informationen?",
+        "Das Integrated Information Processing (IIP) Model  (Schrills, 2024) beschreibt, wie Menschen Informationen wahrnehmen, verstehen und in Entscheidungen oder Handlungen übersetzen – gerade in komplexen oder automatisierten Kontexten. Es hilft zu analysieren, wo Nutzer:innen überfordert, fehlgeleitet oder falsch eingebunden werden – und wie man Systeme intelligenter auf menschliche Denkprozesse abstimmt. Es baut auf drei zentralen Prinzipien auf: ",
+        "* **Input Adequacy** – Sind die Eingangsdaten für Menschen nachvollziehbar und vollständig?",
+        "* **Reference Consonance** – Passen KI-Analysen zu menschlichen Hypothesen und mentalen Modellen?",
+        "* **Output Diagnosticity** – Liefert die KI relevante Hinweise zur Unterscheidung von Optionen?",
+        "### nwendungsbeispiele: Was bringt das in der Praxis?",
+        "*Mehr Beispiele folgen bald – oder fragen Sie uns direkt*"
+      ],
+    "callToAction": "",
+    "image": "/images/about.jpg",
+    "ref": "iip",
+    "resourceTitle": "Integrating humans and artificial intelligence in diagnostic tasks",
+    "resourceYear": "2024",
+    "resourceAuthors": "T. Schrills",
+    "resourceLink": "https://epub.uni-luebeck.de/handle/zhb_hl/3417"
+  }
+]

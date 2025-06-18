@@ -174,10 +174,10 @@ function BartlettGame() {
     }, [isTimerActive, seconds, countdown]);
   
     return (
-      <div className="flex flex-col items-center justify-center h-screen w-full bg-white text-charcoal font-din">
+      <div className="flex flex-col text-charcoal font-din">
 
         {/* Interactive Pixel Guessing Game */}
-        <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400 ">
+        <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400 mt-4 lg:mt-0">
           <div className="flex flex-col items-center p-6 bg-charcoal rounded-t-lg shadow-md">
             {/* Stats */}
             <div className="flex w-full justify-between items-center mb-4 text-white">
@@ -195,9 +195,9 @@ function BartlettGame() {
                 </div>                
             </div>
             {/* Gamefield */}
-            <div className="grid grid-cols-75 gap-0 p-2 bg-white rounded-md w-64 h-64 2xl:w-96 2xl:h-96">
+            <div className="grid grid-cols-75 gap-0 p-2 bg-white rounded-md w-72 h-72 lg:w-80 lg:h-80 2xl:w-96 2xl:h-96">
               {pixelGrid.pixels.map((color, index) => (
-                <div key={index} className="w-[0.2rem] h-[0.2rem] 2xl:w-1 2xl:h-1" style={{ backgroundColor: color === "green" ? "#FCFF35" : "#4D48E2" }}></div>
+                <div key={index} className="w-[0.2rem] h-[0.2rem] lg:w-[0.255rem] lg:h-[0.255rem] 2xl:w-1 2xl:h-1" style={{ backgroundColor: color === "green" ? "#FCFF35" : "#4D48E2" }}></div>
               ))}
               {/* Overlay game end */}
               {showOverlay && (
@@ -249,7 +249,7 @@ function BartlettGame() {
               </div>)}
               {/* Overlay game start */}
               {!isStarted && (
-              <div className="flex flex-col w-64 h-64 self-center justify-self-center items-center justify-center bg-black/70 text-charcoal text-lg absolute rounded-md">
+              <div className="flex flex-col w-80 h-80 self-center justify-self-center items-center justify-center bg-black/70 text-charcoal text-lg absolute rounded-md">
                 <div className="flex flex-col p-2 items-center justify-center bg-white rounded-lg w-[95%] h-[95%]">
                     <p className="text-center px-4 py-2 font-semibold">Bist du bereit?</p> 
                     <p className="text-center text-sm font-light px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
@@ -285,7 +285,7 @@ function BartlettGame() {
             }
           </div>
           {/* AI Hint Section */}
-          <div className="flex w-full bg-pastel-blue rounded-b-md p-2">
+          <div className="flex w-full bg-pastel-blue border border-charcoal rounded-b-md p-2">
             <FontAwesomeIcon icon="robot" size="xl" className="bg-charcoal/15 border-2 border-charcoal rounded-full self-center py-3 px-2 mr-2"/>            
             <div className="px-4 py-2 bg-white text-midnight-blue rounded-tl-none rounded-lg shadow-md w-full text-left">
                 <h3 className="text-sm 2xl:text-2xl font-semibold">KI HINWEIS</h3>

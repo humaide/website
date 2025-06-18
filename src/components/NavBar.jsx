@@ -44,8 +44,8 @@ function NavBar() {
                 <div className="lg:w-[60%] flex flex-col lg:flex-row lg:justify-evenly text-white sm:text-charcoal items-center w-full">
                     <Link onClick={() => setIsOpen(!isOpen)} to="/" className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-y lg:border-y-0 border-y border-y-soft-blue w-full lg:w-fit text-center">{t("nav.home")}</Link>
                     <HashLink to="/#about" onClick={() => setIsOpen(!isOpen)} className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-soft-blue w-full lg:w-fit text-center">{t("nav.about")}</HashLink> 
-                    <HashLink to="/#video" onClick={() => setIsOpen(!isOpen)} className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-soft-blue  w-full lg:w-fit text-center">{t("nav.resources")}</HashLink>
                     <HashLink to="/#solutions" onClick={() => setIsOpen(!isOpen)} className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-soft-blue  w-full lg:w-fit text-center">{t("nav.solutions")}</HashLink>         
+                    <HashLink to="/#video" onClick={() => setIsOpen(!isOpen)} className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-soft-blue  w-full lg:w-fit text-center">{t("nav.resources")}</HashLink>
                     <HashLink to="/#team" onClick={() => setIsOpen(!isOpen)} className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-b lg:border-b-0 border-soft-blue  w-full lg:w-fit text-center">{t("nav.team")}</HashLink>
 
                 </div>
