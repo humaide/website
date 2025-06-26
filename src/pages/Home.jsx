@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 
 
 function Home() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <div className='bg-pastel-blue overflow-clip font-sans hyphens-auto' lang={i18n.language === "de" ? "de" : "en"} >
       <ThemeConfig dark={false} />
@@ -27,7 +27,7 @@ function Home() {
       {/* <ReportSection /> */}
       {/* <Testimonials />       */}
       <TeamSection />
-      <ContactSection />
+      <ContactSection section={t("contact.section")} title={t("contact.title")} subtitle={t("contact.subtitle")} />
     </div>
   )
 }

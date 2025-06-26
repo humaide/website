@@ -178,7 +178,7 @@ function BartlettGame() {
 
         {/* Interactive Pixel Guessing Game */}
         <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400 mt-4 lg:mt-0">
-          <div className="flex flex-col items-center p-6 bg-charcoal rounded-t-lg shadow-md">
+          <div className="flex flex-col items-center p-4 sm:p-6 bg-charcoal rounded-t-lg shadow-md">
             {/* Stats */}
             <div className="flex w-full justify-between items-center mb-4 text-white">
                 <div className="flex items-center">
@@ -249,8 +249,8 @@ function BartlettGame() {
               </div>)}
               {/* Overlay game start */}
               {!isStarted && (
-              <div className="flex flex-col w-80 h-80 self-center justify-self-center items-center justify-center bg-black/70 text-charcoal text-lg absolute rounded-md">
-                <div className="flex flex-col p-2 items-center justify-center bg-white rounded-lg w-[95%] h-[95%]">
+              <div className="flex flex-col w-72 h-72 sm:w-80 sm:h-80 self-center justify-self-center items-center justify-center bg-black/70 text-charcoal text-lg absolute rounded-md">
+                <div className="flex flex-col p-2 items-center justify-center bg-white rounded-lg w-[90%] h-[90%] sm:w-[95%] sm:h-[95%]">
                     <p className="text-center px-4 py-2 font-semibold">Bist du bereit?</p> 
                     <p className="text-center text-sm font-light px-4 pb-2">Tipp: Die KI hat eine ca. 80%-ige Wahrscheinlichkeit richtig zu liegen, d.h. ein Hinweis kann auch falsch sein.</p> 
                     <button onClick={handleStartGame} className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">

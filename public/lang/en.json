@@ -99,5 +99,14 @@
     },
     "sub": {
         "more": "Find out more"
+    },
+    "contactSubpage": {
+        "section": "Contact Details",
+        "title": "Interested to hear more?",
+        "subtitle": "We are looking forward to hearing from you!"
+    },
+    "bartlett-game": {
+        "taskTitle": "How does it work?",
+        "task": "Your task is to decide whether there are more blue or more yellow pixels within the displayed images. You have 10 seconds per round. In the first three rounds you decide on your own, after that you receive a hint from an AI. Important: The AI has a reliability of about 80%."
     }
 }

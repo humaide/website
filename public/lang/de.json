@@ -98,6 +98,15 @@
     },
     "sub": {
         "more": "Mehr dazu"
+    },
+    "contactSubpage": {
+        "section": "Kontaktdetails",
+        "title": "Möchten Sie mehr erfahren?",
+        "subtitle": "Wir freuen uns darauf, von Ihnen zu hören!"
+    },
+    "bartlett-game": {
+        "taskTitle": "Wie funktioniert es?",
+        "task": "Ihre Aufgabe ist es, zu entscheiden ob es mehr blaue oder mehr gelbe Pixel in den angezeigten Bilden gibt. Pro Runde haben Sie dafür 10 Sekunden Zeit. In den ersten drei Runden entscheiden Sie alleine, danach erhalten Sie von einer KI einen Hinweis. Wichtig: Die KI besitzt eine Zuverlässigkeit von ca. 80%."
     }
 
 }

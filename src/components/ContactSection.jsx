@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import Heading from "./Heading";
 import ContactCard from "./ContactCard";
 import DottedHand from '../assets/dotted/dotted-hand-light.svg'
 import { useTranslation } from "react-i18next";
 
-function ContactSection() {
+function ContactSection({ section, title, subtitle }) {
 
     const { t } = useTranslation();
 
@@ -12,7 +13,7 @@ function ContactSection() {
           {/* Wave */}
           <div className='w-full h-20 lg:h-1/3 absolute bg-[url(/bg/wave-white.svg)] bg-cover self-start justify-self-start rotate-180 top-0 z-10'></div>
           {/* Heading */}
-          <Heading postion={"text-center mt-20 lg:mt-72 mb-6 px-4 lg:px-16 z-10"} color={"text-charcoal"} section={t("contact.section")} title={t("contact.title")} subtitle={t("contact.subtitle")} />
+          <Heading postion={"text-center mt-20 lg:mt-72 mb-6 px-4 lg:px-16 z-10"} color={"text-charcoal"} section={section} title={title} subtitle={subtitle} />
           {/* Contact Boxes */}
           <div className="flex flex-col lg:flex-row items-center justify-center hyphens-auto w-full px-4 lg:px-16 z-10" lang="en"> 
             <ContactCard title={t("contact.box-title-call")} content={t("contact.box-content-call")} icon={"headset"}
