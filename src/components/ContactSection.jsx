@@ -17,11 +17,12 @@ function ContactSection({ section, title, subtitle }) {
           {/* Contact Boxes */}
           <div className="flex flex-col lg:flex-row items-center justify-center hyphens-auto w-full px-4 lg:px-16 z-10" lang="en"> 
             <ContactCard title={t("contact.box-title-call")} content={t("contact.box-content-call")} icon={"headset"}
-            btn={t("contact.box-btn-call")} link={"https://calendly.com/hello-humaide/30min"}/>
+            btns={[ {label: t("contact.box-btn-call"), link: "https://calendly.com/hello-humaide/30min"} ]}/>
             <ContactCard title={t("contact.box-title-email")} content={t("contact.box-content-email")} icon={"envelope"}
-            btn={t("contact.box-btn-email")}  link={"mailto:hello@humaide.com?subject=Kontaktanfrage"}/>
+            btns={[ {label: t("contact.box-btn-email"), link: "mailto:hello@humaide.com?subject=Kontaktanfrage"} ]}/>
             <ContactCard title={t("contact.box-title-socials")} content={t("contact.box-content-socials")} icon={"hashtag"}
-            btn={t("contact.box-btn-socials")} link={"https://www.youtube.com/@HUMAIDE-Team"}/>          
+            btns={[ {label: "LinkedIn", link: "www.linkedin.com/company/humaide/"},
+                    {label: "Youtube", link: "https://www.youtube.com/@HUMAIDE-Team"} ]}/>
           </div>
           <div className='w-2/5 absolute left-0 self-start pt-52'>
             <img src={DottedHand} alt="dotted wave illustration" className="w-full"/>
