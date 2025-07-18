@@ -114,7 +114,7 @@ function SolutionsSection() {
                   <div className="flex items-center">
                     <FontAwesomeIcon icon="compass" size="xl" className="bg-gradient-to-b from-pastel-blue to-tangerine text-charcoal rounded-sm mr-6 px-2 py-3 lg:w-10 lg:h-10"/>
                     <div className="flex flex-col">
-                      <h1 lang="en" className="hyphens-auto text-lg lg:text-2xl">{t("solutions.exploreTitle")}</h1>
+                      <h1 lang="en" className="hyphens-auto text-base lg:text-lg">{t("solutions.exploreTitle")}</h1>
                       <p className="text-sm lg:text-base font-extralight">{t("solutions.exploreSub")}</p>
                     </div>                    
                   </div>
