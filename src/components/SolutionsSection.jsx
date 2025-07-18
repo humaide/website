@@ -37,7 +37,7 @@ function SolutionsSection() {
                 </button>
               </div>
 
-              <div className="w-full mt-4 h-20 text-white py-4">
+              <div className="w-full mt-1 h-20 text-white py-4">
 
               {activeTarget === 0 ? (
                 <div>
