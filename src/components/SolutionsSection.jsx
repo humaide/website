@@ -17,51 +17,53 @@ function SolutionsSection() {
     };
 
     return (
-        <section id="solutions" className="h-full lg:min-h-screen relative w-full flex flex-col items-center justify-center bg-charcoal pt-28 pb-10 px-4 lg:px-16">
+        <section id="solutions" className="h-full lg:min-h-screen relative w-full flex flex-col items-center justify-start bg-charcoal py-10 px-4 lg:px-16">
             {/* Heading */}
             <Heading postion={"text-left px-4"} color={"text-white"} section={t("solutions.section")} title={t("solutions.title")} subtitle={t("solutions.subtitle")} />
             {/* Content - Desktop */}
-            <div className="hidden lg:flex w-full">  
+            <div className="hidden lg:flex lg:flex-col w-full">  
 
-              <div className="w-2/5 mt-10 text-white text-xl">
+              <div className="w-full flex mt-10 text-white text-xl">
                 <button className="w-full" onClick={() => handleTargetClick(0)}>
-                  <TargetGroupButton icon={"code"} title={t("solutions.devTitle")} subtitle={t("solutions.devSub")} bottomBorder={true} active={activeTarget === 0} />
+                  <TargetGroupButton icon={"code"} title={t("solutions.devTitle")} subtitle={t("solutions.devSub")} active={activeTarget === 0} />
                 </button>
                 <button className="w-full" onClick={() => handleTargetClick(1)}>
-                  <TargetGroupButton icon={"user"} title={t("solutions.useTitle")} subtitle={t("solutions.useSub")} bottomBorder={true} active={activeTarget === 1} />
+                  <TargetGroupButton icon={"user"} title={t("solutions.useTitle")} subtitle={t("solutions.useSub")} active={activeTarget === 1} />
                 </button>
                 <button className="w-full" onClick={() => handleTargetClick(2)}>
-                  <TargetGroupButton icon={"compass"} title={t("solutions.exploreTitle")} subtitle={t("solutions.exploreSub")} bottomBorder={false}  active={activeTarget === 2}/>
+                  <TargetGroupButton icon={"compass"} title={t("solutions.exploreTitle")} subtitle={t("solutions.exploreSub")} active={activeTarget === 2}/>
                 </button>
               </div>
 
-              <div className="w-2/3 mt-4 h-20 text-white px-4 py-4">
+              <div className="w-full mt-4 h-20 text-white py-4">
 
               {activeTarget === 0 ? (
                 <div>
-                  <h1 className="font-semibold text-lg lg:text-xl py-2">{t("solutions.devContentTitle")}</h1>
-                  <div>
-                    <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} />
-                    <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} />
-                    <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} />                      
+                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.devContentTitle")}</h1>
+                  <div className="flex w-full mt-6">
+                    <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} iconName={"integration"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} iconName={"ai-act"} />
+                    <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} iconName={"trust"} />                      
                   </div>
-            
                 </div>
               ) : activeTarget === 1 ? (
                 <div>
-                  <h1 className="font-semibold  text-lg lg:text-xl py-2">{t("solutions.useContentTitle")}</h1>
-                  <AccordionContentElement title={i18n.language === "de" ? "KI Self-Check" : "AI Self-Check "} content={t("solutions.useContentCheck")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Wirkungsevaluation" : "Impact Evaluation"} content={t("solutions.useContentEval")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Onboarding & Befähigung" : "Onboarding & Enablement"} content={t("solutions.useContentOnboarding")} />
+                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.useContentTitle")}</h1>
+                  <div className="flex w-full mt-6">
+                    <AccordionContentElement title={i18n.language === "de" ? "KI Self-Check" : "AI Self-Check "} content={t("solutions.useContentCheck")} iconName={"control"} />
+                    <AccordionContentElement title={i18n.language === "de" ? "Wirkungsevaluation" : "Impact Evaluation"} content={t("solutions.useContentEval")} iconName={"evaluation"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Onboarding & Befähigung" : "Onboarding & Enablement"} content={t("solutions.useContentOnboarding")} iconName={"onboarding"}/>
+                  </div>                  
                 </div>
               ) : (
                 <div>
-                  <h1 className="font-semibold  text-lg lg:text-xl py-2">{t("solutions.exploreContentTitle")}</h1>
-                  <AccordionContentElement title={i18n.language === "de" ? "Self-Check-Startpaket " : "Self-Check Start Package "} content={t("solutions.exploreContentPackage")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Strategieworkshop: Ist KI das Richtige für uns?" : "Strategy Session: Is AI Right for You?"} content={t("solutions.exploreContentStrategy")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Erste-Schritte-Roadmap" : "First Steps Roadmap "} content={t("solutions.exploreContentRoadmap")} />
+                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.exploreContentTitle")}</h1>
+                  <div className="flex w-full mt-6">
+                    <AccordionContentElement title={i18n.language === "de" ? "Self-Check-Startpaket " : "Self-Check Start Package "} content={t("solutions.exploreContentPackage")} iconName={"human-centered"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Strategieworkshop: Ist KI das Richtige für uns?" : "Strategy Session: Is AI Right for You?"} content={t("solutions.exploreContentStrategy")} iconName={"evaluation"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Erste-Schritte-Roadmap" : "First Steps Roadmap "} content={t("solutions.exploreContentRoadmap")} iconName={"scientific-methods"}/>
+                  </div>                  
                 </div>
-
               )}
 
               </div>
@@ -85,9 +87,9 @@ function SolutionsSection() {
                 </AccordionTitle>
                 <AccordionContent className="bg-charcoal dark:bg-charcoal text-white">
                   <h1 className="font-semibold text-lg lg:text-2xl py-2">{t("solutions.devContentTitle")}</h1>
-                  <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} />
-                  <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} />
+                    <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} iconName={"integration"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} iconName={"ai-act"} />
+                    <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} iconName={"trust"} />      
                 </AccordionContent>
               </AccordionPanel>
               <AccordionPanel>
@@ -102,9 +104,9 @@ function SolutionsSection() {
                 </AccordionTitle>
                 <AccordionContent className="bg-charcoal dark:bg-charcoal text-white">
                   <h1 className="font-semibold  text-lg lg:text-2xl py-2">{t("solutions.useContentTitle")}</h1>
-                  <AccordionContentElement title={i18n.language === "de" ? "KI Self-Check" : "AI Self-Check "} content={t("solutions.useContentCheck")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Wirkungsevaluation" : "Impact Evaluation"} content={t("solutions.useContentEval")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Onboarding & Befähigung" : "Onboarding & Enablement"} content={t("solutions.useContentOnboarding")} />
+                    <AccordionContentElement title={i18n.language === "de" ? "KI Self-Check" : "AI Self-Check "} content={t("solutions.useContentCheck")} iconName={"control"} />
+                    <AccordionContentElement title={i18n.language === "de" ? "Wirkungsevaluation" : "Impact Evaluation"} content={t("solutions.useContentEval")} iconName={"evaluation"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Onboarding & Befähigung" : "Onboarding & Enablement"} content={t("solutions.useContentOnboarding")} iconName={"onboarding"}/>
                 </AccordionContent>
               </AccordionPanel>
               <AccordionPanel>
@@ -119,9 +121,9 @@ function SolutionsSection() {
                 </AccordionTitle>                
                 <AccordionContent className="bg-charcoal dark:bg-charcoal text-white">
                   <h1 className="font-semibold  text-lg lg:text-2xl py-2">{t("solutions.exploreContentTitle")}</h1>
-                  <AccordionContentElement title={i18n.language === "de" ? "Self-Check-Startpaket " : "Self-Check Start Package "} content={t("solutions.exploreContentPackage")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Strategieworkshop: Ist KI das Richtige für uns?" : "Strategy Session: Is AI Right for You?"} content={t("solutions.exploreContentStrategy")} />
-                  <AccordionContentElement title={i18n.language === "de" ? "Erste-Schritte-Roadmap" : "First Steps Roadmap "} content={t("solutions.exploreContentRoadmap")} />
+                    <AccordionContentElement title={i18n.language === "de" ? "Self-Check-Startpaket " : "Self-Check Start Package "} content={t("solutions.exploreContentPackage")} iconName={"human-centered"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Strategieworkshop: Ist KI das Richtige für uns?" : "Strategy Session: Is AI Right for You?"} content={t("solutions.exploreContentStrategy")} iconName={"evaluation"}/>
+                    <AccordionContentElement title={i18n.language === "de" ? "Erste-Schritte-Roadmap" : "First Steps Roadmap "} content={t("solutions.exploreContentRoadmap")} iconName={"scientific-methods"}/>
                 </AccordionContent>
               </AccordionPanel>
               
