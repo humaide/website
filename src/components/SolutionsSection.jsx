@@ -23,14 +23,16 @@ function SolutionsSection() {
             {/* Content - Desktop */}
             <div className="hidden lg:flex lg:flex-col w-full">  
 
-              <div className="w-full flex mt-10 text-white text-xl">
-                <button className="w-full" onClick={() => handleTargetClick(0)}>
+              <p className="text-white mt-10 pb-4 font-extralight text-base lg:text-lg text-center">Choose the path that fits your situation: </p>
+
+              <div className="w-full flex justify-center text-white text-xl">
+                <button className="w-fit mr-2" onClick={() => handleTargetClick(0)}>
                   <TargetGroupButton icon={"code"} title={t("solutions.devTitle")} subtitle={t("solutions.devSub")} active={activeTarget === 0} />
                 </button>
-                <button className="w-full" onClick={() => handleTargetClick(1)}>
+                <button className="w-fit  mr-2" onClick={() => handleTargetClick(1)}>
                   <TargetGroupButton icon={"user"} title={t("solutions.useTitle")} subtitle={t("solutions.useSub")} active={activeTarget === 1} />
                 </button>
-                <button className="w-full" onClick={() => handleTargetClick(2)}>
+                <button className="w-fit" onClick={() => handleTargetClick(2)}>
                   <TargetGroupButton icon={"compass"} title={t("solutions.exploreTitle")} subtitle={t("solutions.exploreSub")} active={activeTarget === 2}/>
                 </button>
               </div>
@@ -39,30 +41,30 @@ function SolutionsSection() {
 
               {activeTarget === 0 ? (
                 <div>
-                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.devContentTitle")}</h1>
-                  <div className="flex w-full mt-6">
+                  <div className="flex w-full mt-4">
                     <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} iconName={"integration"}/>
                     <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} iconName={"ai-act"} />
                     <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} iconName={"trust"} />                      
                   </div>
+                  <h1 className="font-extralight text-center text-lg lg:text-xl pt-8">{t("solutions.devContentTitle")}</h1>
                 </div>
               ) : activeTarget === 1 ? (
                 <div>
-                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.useContentTitle")}</h1>
-                  <div className="flex w-full mt-6">
+                  <div className="flex w-full mt-4">
                     <AccordionContentElement title={i18n.language === "de" ? "KI Self-Check" : "AI Self-Check "} content={t("solutions.useContentCheck")} iconName={"control"} />
                     <AccordionContentElement title={i18n.language === "de" ? "Wirkungsevaluation" : "Impact Evaluation"} content={t("solutions.useContentEval")} iconName={"evaluation"}/>
                     <AccordionContentElement title={i18n.language === "de" ? "Onboarding & Befähigung" : "Onboarding & Enablement"} content={t("solutions.useContentOnboarding")} iconName={"onboarding"}/>
-                  </div>                  
+                  </div>       
+                  <h1 className="font-extralight text-center text-lg lg:text-xl pt-8">{t("solutions.useContentTitle")}</h1>           
                 </div>
               ) : (
                 <div>
-                  <h1 className="font-semibold text-center text-lg lg:text-xl py-2">{t("solutions.exploreContentTitle")}</h1>
-                  <div className="flex w-full mt-6">
+                  <div className="flex w-full mt-4">
                     <AccordionContentElement title={i18n.language === "de" ? "Self-Check-Startpaket " : "Self-Check Start Package "} content={t("solutions.exploreContentPackage")} iconName={"human-centered"}/>
                     <AccordionContentElement title={i18n.language === "de" ? "Strategieworkshop: Ist KI das Richtige für uns?" : "Strategy Session: Is AI Right for You?"} content={t("solutions.exploreContentStrategy")} iconName={"evaluation"}/>
                     <AccordionContentElement title={i18n.language === "de" ? "Erste-Schritte-Roadmap" : "First Steps Roadmap "} content={t("solutions.exploreContentRoadmap")} iconName={"scientific-methods"}/>
-                  </div>                  
+                  </div>   
+                  <h1 className="font-extralight text-center text-lg lg:text-xl pt-8">{t("solutions.exploreContentTitle")}</h1>               
                 </div>
               )}
 
