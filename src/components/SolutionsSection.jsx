@@ -80,13 +80,13 @@ function SolutionsSection() {
                   <div className="flex items-center">
                     <FontAwesomeIcon icon="code" size="xl" className="bg-gradient-to-b from-pastel-blue to-tangerine text-charcoal rounded-sm mr-6 px-2 py-3 lg:w-10 lg:h-10"/>
                     <div className="flex flex-col">
-                      <h1 className=" text-lg lg:text-2xl">{t("solutions.devTitle")}</h1>
-                      <p className="font-extralight">{t("solutions.devSub")}</p>
+                      <h1 className="text-base lg:text-lg">{t("solutions.devTitle")}</h1>
+                      <p className="text-sm lg:text-base font-extralight">{t("solutions.devSub")}</p>
                     </div>                    
                   </div>
                 </AccordionTitle>
                 <AccordionContent className="bg-charcoal dark:bg-charcoal text-white">
-                  <h1 className="font-semibold text-lg lg:text-2xl py-2">{t("solutions.devContentTitle")}</h1>
+                  <h1 className="font-semibold text-base lg:text-lg py-2">{t("solutions.devContentTitle")}</h1>
                     <AccordionContentElement title={"Human Integration Audits"} content={t("solutions.devContentAudit")} iconName={"integration"}/>
                     <AccordionContentElement title={i18n.language === "de" ? "AI Act Preparation" : "AI Act Readiness"} content={t("solutions.devContentAct")} iconName={"ai-act"} />
                     <AccordionContentElement title={"Trust-by-Design Workshops"} content={t("solutions.devContentWorkshops")} iconName={"trust"} />      
@@ -97,8 +97,8 @@ function SolutionsSection() {
                   <div className="flex items-center">
                     <FontAwesomeIcon icon="user" size="xl" className="bg-gradient-to-b from-pastel-blue to-tangerine text-charcoal rounded-sm mr-6 px-2 py-3 lg:w-10 lg:h-10"/>
                     <div className="flex flex-col">
-                      <h1 className=" text-lg lg:text-2xl">{t("solutions.useTitle")}</h1> 
-                      <p className="font-extralight">{t("solutions.useSub")}</p>
+                      <h1 className=" text-base lg:text-lg">{t("solutions.useTitle")}</h1> 
+                      <p className="text-sm lg:text-base font-extralight">{t("solutions.useSub")}</p>
                     </div>                    
                   </div>
                 </AccordionTitle>
@@ -115,7 +115,7 @@ function SolutionsSection() {
                     <FontAwesomeIcon icon="compass" size="xl" className="bg-gradient-to-b from-pastel-blue to-tangerine text-charcoal rounded-sm mr-6 px-2 py-3 lg:w-10 lg:h-10"/>
                     <div className="flex flex-col">
                       <h1 lang="en" className="hyphens-auto text-lg lg:text-2xl">{t("solutions.exploreTitle")}</h1>
-                      <p className="font-extralight">{t("solutions.exploreSub")}</p>
+                      <p className="text-sm lg:text-base font-extralight">{t("solutions.exploreSub")}</p>
                     </div>                    
                   </div>
                 </AccordionTitle>                
