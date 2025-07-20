@@ -19,7 +19,7 @@ function NavBar() {
     };
 
     return (
-    <nav className="flex flex-col bg-pastel-blue text-charcoal w-full font-sans  z-150 lg:z-100 fixed">
+    <nav className="flex flex-col bg-pastel-blue/25 backdrop-blur-xl text-charcoal w-full font-sans  z-150 lg:z-100 fixed">
         {/* mobile nav icon */}
         <div className="flex lg:hidden self-end justify-between items-center w-full px-4 py-2 z-150">
             <div className="flex items-center">
@@ -30,8 +30,8 @@ function NavBar() {
             </button>
         </div>
         {/* nav content */}
-        <div className={`w-3/4 z-100 lg:w-full bg-charcoal sm:bg-pastel-blue self-end h-full lg:h-fit absolute lg:relative flex flex-col lg:flex lg:justify-between items-center text-white sm:text-charcoal grow xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-5xl ${isOpen ? "flex" : "hidden"}`} >
-            <div className="w-full flex flex-col lg:flex-row lg:justify-between text-white sm:text-charcoal items-center bg-charcoal sm:bg-pastel-blue">
+        <div className={`w-3/4 z-100 lg:w-full bg-charcoal sm:bg-pastel-blue/25 backdrop-blur-xl self-end h-full lg:h-fit absolute lg:relative flex flex-col lg:flex lg:justify-between items-center text-white sm:text-charcoal grow xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-5xl ${isOpen ? "flex" : "hidden"}`} >
+            <div className="w-full flex flex-col lg:flex-row lg:justify-between text-white sm:text-charcoal items-center bg-charcoal sm:bg-pastel-blue/25 backdrop-blur-xl">
                 {/* logo (desktop) */}
                 <div className="lg:w-1/3 items-center hidden lg:flex">
                     <img src="logos/logo-dark-accent.svg" alt="Humaide Logo" className="mx-4 h-10 w-10 my-1"/>
@@ -58,7 +58,7 @@ function NavBar() {
                     {/* Language Switcher */}
                     <div className="flex items-center justify-center space-x-2 mr-4 mt-4 px-4 pt-4 pb-2 lg:pt-0 lg:pb-0 lg:px-0 lg:mt-0 text-base lg:text-charcoal border-t lg:border-t-0 border-soft-blue w-full lg:w-fit">
                         <Flag code={i18n.language === "de" ? "de" : "us"} className="w-6" />
-                        <select defaultValue={i18n.language} onChange={onChangeLang} className="bg-charcoal lg:bg-pastel-blue px-4 ">
+                        <select defaultValue={i18n.language} onChange={onChangeLang} className="bg-charcoal lg:bg-transparent px-4 ">
                             {LANGUAGES.map(({ code, label }) => (
                             <option key={code} value={code}>
                                 <p className="px-4 py-2">{label}</p>
