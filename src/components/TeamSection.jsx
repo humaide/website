@@ -6,7 +6,7 @@ import thomasImage from '../assets/images/team-thomas2.jpg';
 import michelleImage from '../assets/images/team-michelle2.jpg';
 import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react";
-
+import PersonalSocialMedia from './PersonalSocialMedia';
 
 function TeamSection() {
 
@@ -36,15 +36,15 @@ function TeamSection() {
                         <motion.div  className='flex flex-col mr-3 mb-4 w-full' custom={0} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                             <img className="object-cover" src={timImage} alt="Image Tim" />  
                             <p className='pt-4 font-semibold text-lg'>Dr. Tim Schrills</p>
-                            {/* <p className='pb-4 font-light text-lg'>{t("team.tim-position")}</p>  */}
-                            <p className='text-base text-charcoal/75'>{t("team.tim-description")}</p>  
+                            <p className='text-base text-charcoal/75'>{t("team.tim-description")}</p>
+                            <PersonalSocialMedia mail={"tim@humaide.com"} linkedin={"https://www.linkedin.com/in/tim-schrills-a8a7b2166"}/>
                         </motion.div >
 
                         <motion.div  className='flex flex-col mr-3 mb-4 w-full' custom={1} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                             <img className="object-cover" src={luisaImage} alt="Image Luisa" />  
                             <p className='pt-4 font-semibold text-lg'>Luisa Winzer, M. Sc.</p>
-                            {/* <p className='pb-4 font-light text-lg'>{t("team.luisa-position")}</p>  */}
-                            <p className='text-base text-charcoal/75'>{t("team.luisa-description")}</p>  
+                            <p className='text-base text-charcoal/75'>{t("team.luisa-description")}</p>
+                            <PersonalSocialMedia mail={"luisa@humaide.com"} linkedin={"https://www.linkedin.com/in/luisa-winzer"}/>  
                         </motion.div >
                     </div>
 
@@ -52,18 +52,24 @@ function TeamSection() {
                         <motion.div  className='flex flex-col mr-3 mb-4 w-full' custom={2} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                             <img className="object-cover" src={thomasImage} alt="Image Thomas" />  
                             <p className='pt-4 font-semibold text-lg'>Prof. Dr. Thomas Franke</p>
-                            {/* <p className='pb-4 font-light text-lg'>{t("team.thomas-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.thomas-description")}</p>  
+                            <PersonalSocialMedia mail={"thomas@humaide.com"} linkedin={"https://www.linkedin.com/in/hithomasfranke"} style={"lg:hidden"}/>
                         </motion.div >
 
                         <motion.div  className='flex flex-col mr-3 mb-4 w-full' custom={3} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                             <img className="object-cover" src={michelleImage} alt="Image Michelle" />  
                             <p className='pt-4 font-semibold text-lg'>Michelle Wrage, B. Sc.</p>
-                            {/* <p className='pb-4 font-light text-lg'>{t("team.michelle-position")}</p>  */}
                             <p className='text-base text-charcoal/75'>{t("team.michelle-description")}</p>  
+                            <PersonalSocialMedia mail={"michelle@humaide.com"} linkedin={"https://www.linkedin.com/in/michelle-wrage-50aab630a"} style={"lg:hidden"}/>
                         </motion.div >
                     </div>
                 </div> 
+                <div className='max-lg:hidden flex w-full'>
+                    <PersonalSocialMedia mail={"tim@humaide.com"} linkedin={"https://www.linkedin.com/in/tim-schrills-a8a7b2166"}/>
+                    <PersonalSocialMedia mail={"luisa@humaide.com"} linkedin={"https://www.linkedin.com/in/luisa-winzer"}/>
+                    <PersonalSocialMedia mail={"thomas@humaide.com"} linkedin={"https://www.linkedin.com/in/hithomasfranke"}/>
+                    <PersonalSocialMedia mail={"michelle@humaide.com"} linkedin={"https://www.linkedin.com/in/michelle-wrage-50aab630a"}/>
+                </div>
             </div>
         </section>
     );
