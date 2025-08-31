@@ -37,14 +37,14 @@ function TeamSection() {
                             <img className="object-cover" src={timImage} alt="Image Tim" />  
                             <p className='pt-4 font-semibold text-lg'>Dr. Tim Schrills</p>
                             <p className='text-base text-charcoal/75'>{t("team.tim-description")}</p>
-                            <PersonalSocialMedia mail={"tim@humaide.com"} linkedin={"https://www.linkedin.com/in/tim-schrills-a8a7b2166"}/>
+                            <PersonalSocialMedia mail={"tim@humaide.com"} linkedin={"https://www.linkedin.com/in/tim-schrills-a8a7b2166"} style={"lg:hidden"}/>
                         </motion.div >
 
                         <motion.div  className='flex flex-col mr-3 mb-4 w-full' custom={1} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                             <img className="object-cover" src={luisaImage} alt="Image Luisa" />  
                             <p className='pt-4 font-semibold text-lg'>Luisa Winzer, M. Sc.</p>
                             <p className='text-base text-charcoal/75'>{t("team.luisa-description")}</p>
-                            <PersonalSocialMedia mail={"luisa@humaide.com"} linkedin={"https://www.linkedin.com/in/luisa-winzer"}/>  
+                            <PersonalSocialMedia mail={"luisa@humaide.com"} linkedin={"https://www.linkedin.com/in/luisa-winzer"} style={"lg:hidden"}/> 
                         </motion.div >
                     </div>
 
