@@ -24,11 +24,11 @@ const MissionSection = () => {
   };
 
   return (
-    <section id="about" className="bg-charcoal w-full h-full lg:h-screen text-white lg:py-24 px-4 lg:px-16 overflow-hidden">
+    <section id="about" className="bg-charcoal w-full h-full min-h-screen lg:h-screen text-white lg:py-24 px-4 lg:px-16 overflow-hidden">
       
       <Heading postion={"text-left pt-10 lg:pt-0"} color={"text-white"} section={t("about.section")} title={t("mission.title")} subtitle=""/>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:py-20 z-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:py-10 z-10">
         {/* Left text */}
         <motion.div className="lg:w-1/2 flex flex-col items-center justify-center px-4 lg:px-0 lg:pr-10 py-10" variants={fadeInFromTop} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
           <h2 className="text-4xl lg:text-5xl font-extralight leading-tight text-center lg:text-right lg:max-w-4xl">
