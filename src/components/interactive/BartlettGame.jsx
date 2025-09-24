@@ -174,7 +174,7 @@ function BartlettGame() {
     }, [isTimerActive, seconds, countdown]);
   
     return (
-      <div className="flex flex-col text-charcoal font-din">
+      <div className="flex flex-col text-charcoal font-din mx-auto">
 
         {/* Interactive Pixel Guessing Game */}
         <div className="flex flex-col items-center max-w-max rounded-md shadow-lg md:shadow-2xl shadow-gray-400 mt-4 lg:mt-0">
@@ -240,7 +240,7 @@ function BartlettGame() {
                         Erzähl uns davon!
                       </button>   
                     </a>  */}
-                    <button onClick={continueAfterInfo} className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">
+                    <button onClick={() => window.location.reload()}  className="pl-4 py-2 pr-3 duration-300 bg-pastel-blue hover:bg-pastel-blue/75 text-charcoal rounded-full shadow-md shadow-gray-400/60">
                       <span className="text-base">Nochmal</span>
                       <FontAwesomeIcon icon="play" size="sm" className="text-charcoal pl-2 pr-1"/>
                     </button> 
