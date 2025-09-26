@@ -42,7 +42,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="flex flex-col bg-transparent backdrop-blur-xl text-white w-full font-sans fixed z-100">
+    <nav className="flex flex-col bg-charcoal/40 backdrop-blur-xl text-white w-full font-sans fixed z-100">
       {/* mobile nav icon */}
       <div className={`flex lg:hidden self-end justify-between items-center w-full px-4 py-2 z-40`}>
         <div className="flex items-center">
@@ -70,7 +70,7 @@ function NavBar() {
           </button>
 
           {/* menu items */}
-          <div className={`lg:w-[60%] sm:bg-pastel-blue lg:bg-transparent flex flex-col lg:flex-row lg:justify-evenly ${isDark ? "lg:text-white": "lg:text-charcoal"} items-center w-full`}>
+          <div className={`lg:w-[60%] sm:bg-pastel-blue lg:bg-transparent flex flex-col lg:flex-row lg:justify-evenly lg:text-white items-center w-full`}>
             <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-tangerine duration-300 transform lg:hover:scale-110 py-4 lg:py-2 lg:px-4 border-y lg:border-y-0 border-y-soft-blue w-full lg:w-fit text-center">
               {t("nav.home")}
             </Link>
@@ -96,7 +96,7 @@ function NavBar() {
             </HashLink>
 
             {/* Language Switcher */}
-            <div className={`flex items-center justify-center space-x-2 mr-4 mt-4 px-4 pt-4 pb-2 lg:pt-0 lg:pb-0 lg:px-0 lg:mt-0 text-base  ${isDark ? "lg:text-white": "lg:text-charcoal"} border-t lg:border-t-0 border-soft-blue w-full lg:w-fit`}>
+            <div className={`flex items-center justify-center space-x-2 mr-4 mt-4 px-4 pt-4 pb-2 lg:pt-0 lg:pb-0 lg:px-0 lg:mt-0 text-base lg:text-white border-t lg:border-t-0 border-soft-blue w-full lg:w-fit`}>
               <Flag code={i18n.language === "de" ? "de" : "us"} className="w-6" />
               <select defaultValue={i18n.language} onChange={onChangeLang} className="bg-charcoal sm:bg-pastel-blue lg:bg-transparent px-4 ">
                 {LANGUAGES.map(({ code, label }) => (
