@@ -24,7 +24,7 @@ const MissionSection = () => {
   };
 
   return (
-    <section id="about" className="bg-charcoal w-full h-full min-h-screen lg:h-screen text-white lg:py-24 px-4 lg:px-16 overflow-hidden">
+    <section id="about" className="flex flex-col items-center justify-center bg-charcoal w-full h-full min-h-screen lg:h-screen text-white lg:pt-24 px-4 lg:px-16 overflow-hidden">
       
       <Heading postion={"text-left pt-10 lg:pt-0"} color={"text-white"} section={t("about.section")} title={t("mission.title")} subtitle=""/>
 
