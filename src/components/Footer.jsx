@@ -18,10 +18,7 @@ function Footer() {
               </div> 
               <img src="logos/logo-text-dark-accent.svg" alt="Humaide Logo" className="h-6"/>
             </div>  
-            <Link to="/contact" className="hover:text-tangerine font-light duration-300 transform hover:scale-110">{t("footer.legal-notice")}</Link >    
-            <div className="w-fit flex flex-col lg:flex-row items-center p-4 text-center font-light text-lg">
-              <img src="partner/GW49-logo-blue.svg" alt="gateway 49 Logo" className="w-28 self-center"/>  
-            </div>    
+            <Link to="/contact" className="hover:text-tangerine font-light duration-300 transform hover:scale-110">{t("footer.legal-notice")}</Link >      
         </div>
         
       </footer>
