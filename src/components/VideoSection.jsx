@@ -40,51 +40,6 @@ function VideoSection() {
                             </div>  
                         </div> 
                     </div>
-
-
-                {/* <div className="grid grid-cols-3 gap-2">
-                
-                    <div className="col-span-2 h-72 w-full bg-cover">
-                        <div className='flex items-center justify-start w-full h-full'>
-                            <div className='bg-white flex items-center justify-center w-full h-full'>
-                                <iframe
-                                    className='w-full h-full duration-500'
-                                    src="https://www.youtube.com/embed/Rv_mruCt0CM?si=bNjrrkChgyAWu2KI"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>  
-                        </div> 
-                    </div>
-                    
-                    <div className="bg-tangerine h-72">
-                        <img src={Texture4} alt="dotted wave illustration" className="w-full h-full object-cover"/>
-                    </div>
-                    
-                    <div className="bg-soft-blue w-full h-72">
-                        <img src={Texture9} alt="dotted wave illustration" className="w-full h-full object-cover"/>
-                    </div>
-
-                    <div className="col-span-2 h-72 w-full bg-cover">
-                        <div className='flex items-center justify-start w-full h-full'>
-                            <div className='bg-white flex items-center justify-center w-full h-full'>
-                                <iframe
-                                    className='w-full h-full duration-500'
-                                    src="https://www.youtube.com/embed/Rv_mruCt0CM?si=bNjrrkChgyAWu2KI"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>  
-                        </div> 
-                    </div>
-
-                </div> */}
             </div>
         </section>
     );

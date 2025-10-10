@@ -33,7 +33,7 @@ function ContactSection({ section, title, subtitle }) {
             <ContactCard custom={1} variants={cardVariants} title={t("contact.box-title-email")} content={t("contact.box-content-email")} icon={"envelope"}
             btns={[ {label: t("contact.box-btn-email"), link: "mailto:hello@humaide.com?subject=Kontaktanfrage"} ]}/>
             <ContactCard custom={2} variants={cardVariants} title={t("contact.box-title-socials")} content={t("contact.box-content-socials")} icon={"hashtag"}
-            btns={[ {label: "LinkedIn", link: "www.linkedin.com/company/humaide/"},
+            btns={[ {label: "LinkedIn", link: "https://www.linkedin.com/company/humaide/"},
                     {label: "Youtube", link: "https://www.youtube.com/@HUMAIDE-Team"} ]}/>
           </div>
           <div className='w-2/5 absolute left-0 self-start pt-52'>

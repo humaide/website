@@ -52,18 +52,7 @@ function IntroSection() {
             <ChevronsRight />
           </HashLink >
         </div>
-
-
-        {/* <motion.div className='lg:w-2/3 absolute z-80 lg:z-5 right-0 top-16 lg:top-auto self-center lg:pt-20'
-          initial={{ opacity: 0, scale: 0.97, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.2, ease: [0.25, 0.5, 0.25, 1] }}>
-          <img src={DottedWave} alt="dotted wave illustration" className="w-full" />
-        </motion.div> */}
       </div>
-
-      {/* Wave (bottom) */}
-      {/* <div className='w-full h-20 lg:h-1/3 lg:absolute bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start z-80 lg:bottom-0'></div> */}
     </section>
   );
 }

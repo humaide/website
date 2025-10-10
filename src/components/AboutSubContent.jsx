@@ -24,11 +24,10 @@ const AboutSubContent = ({ title, subtitle, mainContent, callToAction, ref, reso
 
       <div className='flex flex-col h-screen w-full text-charcoal'>
         <div className='w-full h-full flex flex-col justify-center px-4 sm:px-16 text-left '>
-          <img src={ref === "bartlett" ? HumanCenteredAI : ref === "kivo" ? AIAct : ScientificMethods} alt="dotted wave illustration" className="w-28" />            
+          <img src={ref === "bartlett" ? HumanCenteredAI : ref === "kivo" ? AIAct : ScientificMethods} alt="Sub content icon" className="w-28" />            
           <h1 className="text-3xl md:text-4xl lg:text-7xl py-4 l:pb-0 font-bold">{title}</h1> 
           <h2 className="sm:w-3/4 lg:text-4xl font-extralight">{subtitle}</h2>   
         </div>
-        <div className='w-full h-20 lg:h-1/3 lg:absolute bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start z-90 lg:-bottom-4'></div> 
       </div>
 
       <div className='pt-10 pb-20 lg:px-52 bg-charcoal text-white'>
@@ -40,7 +39,6 @@ const AboutSubContent = ({ title, subtitle, mainContent, callToAction, ref, reso
       
 
       <div className='bg-white w-screen'>
-        <div className='w-full h-20 lg:h-60 bg-[url(/bg/wave.svg)] bg-cover self-start justify-self-start rotate-180 scale-x-[-1] z-10'></div>
         {ref === "bartlett" ? 
           <div className='flex flex-col items-center text-center pb-10 lg:pb-20 px-4 lg:px-52 bg-white text-charcoal'>
             <p className="lg:text-3xl pb-10">{callToAction}</p> 
