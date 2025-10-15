@@ -100,7 +100,7 @@ function NavBar() {
               <Flag code={i18n.language === "de" ? "de" : "us"} className="w-6" />
               <select defaultValue={i18n.language} onChange={onChangeLang} className="bg-charcoal sm:bg-pastel-blue lg:bg-transparent px-4 ">
                 {LANGUAGES.map(({ code, label }) => (
-                  <option key={code} value={code}>
+                  <option key={code} value={code} className="text-charcoal">
                     <p className="px-4 py-2">{label}</p>
                   </option>
                 ))}
